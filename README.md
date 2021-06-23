@@ -10,6 +10,18 @@ This lab will cover:
 Each steps takes about 2 hours and consists of both theory (30/45 minutes) and practice.
 At the end of each step, you will be provided with the solution of the exercise.
 
+## Time schedule
+|           |           |
+|-          |-          |
+| 9.15      | begin     |
+| 10.30-40  | break     |
+| 11.30-40  | break     |
+| 13-14     | launch    |
+| 15.30-40  | break     |
+| 16.30-40  | break     |
+| 17.45     | end       |
+
+
 ## Technical requirements
 
 How many of you are familiar with...
