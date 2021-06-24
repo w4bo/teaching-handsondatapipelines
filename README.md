@@ -26,6 +26,7 @@ At the end of each step, you will be provided with the solution of the exercise.
 
 How many of you are familiar with...
 
+- Virtualization (`docker`)
 - Project versioning (`git`), dependency management (`venv`), and build automation (`gradle`)
 - Coding (`python`, `scala`)
 - Data manipulation (`pandas`), and machine learning (`sklearn`)
