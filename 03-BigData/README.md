@@ -16,3 +16,5 @@ In Linux
 ```
 docker run -p 8080:8080 --rm -v $(pwd):/opt/zeppelin/notebook --name zeppelin apache/zeppelin:0.9.0
 ```
+
+Then, access Zeppelin from your browser `http://127.0.0.1:8080`
