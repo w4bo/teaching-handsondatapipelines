@@ -3,11 +3,11 @@
 This lab will cover:
 
 - Data cleaning and preprocessing
-- Big data elaboration on Spark
 - Machine learning
+- Big data elaboration on Spark
 - OLAP and data visualization
 
-Each steps takes about 2 hours and consists of both theory (30/45 minutes) and practice.
+Each steps takes about 2 hours and covers both theory and practice.
 At the end of each step, you will be provided with the solution of the exercise.
 
 ## Time schedule
@@ -36,9 +36,6 @@ How many of you are familiar with...
 To join this lab, you need to "install" the above mentioned software.
 
 ## Data cleaning and preprocessing
-
-## Big data elaboration on Spark
-
 ## Machine learning
-
+## Big data elaboration on Spark
 ## OLAP and data visualization

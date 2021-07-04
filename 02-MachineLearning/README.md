@@ -1,4 +1,4 @@
-# 01 - Data preprocessing
+# 01 - Machine learning
 
 ## Running the code
 
