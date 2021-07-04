@@ -2,24 +2,24 @@
 
 ## Running the code
 
-- Install docker
-- Make sure that docker daemon is up and running
+- Install Docker
+- Make sure that the Docker daemon is up and running
 - Open a browser (e.g., Firefox)
 - Then, run one of the following commands depending on your OS
     - In Windows (cmd)
     ```
-    docker build -t lab01 .
-    docker run -p 8888:8888 --rm -v %cd%:/ lab01
+    docker build -t lab02 .
+    docker run -p 8888:8888 --rm -v %cd%:/ lab02
     ```
     - In Windows (powershell)
     ```
-    docker build -t lab01 .
-    docker run -p 8888:8888 --rm -v ${PWD}:/notebook lab01
+    docker build -t lab02 .
+    docker run -p 8888:8888 --rm -v ${PWD}:/notebook lab02
     ```
     - In Linux
     ```
-    docker build -t lab01 .
-    docker run -p 8888:8888 --rm -v $(pwd):/notebook lab01
+    docker build -t lab02 .
+    docker run -p 8888:8888 --rm -v $(pwd):/notebook lab02
     ```
 - After running the container, in the shell will be prompted a link; copy and paste the link into your browser
 - Play with the notebook 

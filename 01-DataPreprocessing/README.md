@@ -2,8 +2,8 @@
 
 ## Running the code
 
-- Install docker
-- Make sure that docker daemon is up and running
+- Install Docker
+- Make sure that the Docker daemon is up and running
 - Open a browser (e.g., Firefox)
 - Then, run one of the following commands depending on your OS
     - In Windows (cmd)
