@@ -25,4 +25,6 @@
 - After running the container, in the shell will be prompted a link beginning with `127.0.0.1:8888`; copy and paste the link into your browser
 - Play with the notebook 
 - When done, clean all the running containers
+    - In Windows (cmd): run `docker ps -q` first, and replace the returned string into `docker stop <string>`
     - In Windows (powershell): `docker ps -q | % { docker stop $_ }`
+    - In Linux: `docker stop $(docker ps -q)`
