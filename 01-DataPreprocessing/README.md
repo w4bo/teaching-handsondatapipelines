@@ -22,7 +22,7 @@
     docker build -t lab01 .
     docker run -p 8888:8888 --rm -v $(pwd):/notebook lab01
     ```
-- After running the container, in the shell will be prompted a link; copy and paste the link into your browser
+- After running the container, in the shell will be prompted a link beginning with `127.0.0.1:8888`; copy and paste the link into your browser
 - Play with the notebook 
 - When done, clean all the running containers
     - In Windows (powershell): `docker ps -q | % { docker stop $_ }`
