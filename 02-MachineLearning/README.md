@@ -5,6 +5,7 @@
 - Install Docker
 - Make sure that the Docker daemon is up and running
 - Open a browser (e.g., Firefox)
+- Open a terminal in the directory `02-MachineLearning`
 - Then, run one of the following commands depending on your OS
     - In Windows (cmd)
     ```

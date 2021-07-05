@@ -5,11 +5,12 @@
 - Install Docker
 - Make sure that the Docker daemon is up and running
 - Open a browser (e.g., Firefox)
+- Open a terminal in the directory `01-DataPreprocessing`
 - Then, run one of the following commands depending on your OS
     - In Windows (cmd)
     ```
     docker build -t lab01 .
-    docker run -p 8888:8888 --rm -v %cd%:/ lab01
+    docker run -p 8888:8888 --rm -v %cd%:/notebook lab01
     ```
     - In Windows (powershell)
     ```
