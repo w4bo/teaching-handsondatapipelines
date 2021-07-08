@@ -9,15 +9,15 @@
 - Then, run one of the following commands depending on your OS
     - In Windows (cmd)
     ```
-    docker run -p 8080:8080 --rm -v %cd%:/opt/zeppelin/notebook --name zeppelin apache/zeppelin:0.9.0
+    docker run -p 8080:8080 -p 4040:4040 --rm -v %cd%:/opt/zeppelin/notebook --name zeppelin apache/zeppelin:0.9.0
     ```
     - In Windows (powershell)
     ```
-    docker run -p 8080:8080 --rm -v ${PWD}:/opt/zeppelin/notebook --name zeppelin apache/zeppelin:0.9.0
+    docker run -p 8080:8080 -p 4040:4040 --rm -v ${PWD}:/opt/zeppelin/notebook --name zeppelin apache/zeppelin:0.9.0
     ```
     - In Linux
     ```
-    docker run -p 8080:8080 --rm -v $(pwd):/opt/zeppelin/notebook --name zeppelin apache/zeppelin:0.9.0
+    docker run -p 8080:8080 -p 4040:4040 --rm -v $(pwd):/opt/zeppelin/notebook --name zeppelin apache/zeppelin:0.9.0
     ```
 - After running the container, access Zeppelin from your browser `http://127.0.0.1:8080`
     - Notice that this container does not explicitly notifies when the notebook is ready, just access the browser

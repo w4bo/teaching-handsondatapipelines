@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,intellij,eclipse,gradle,java,scala,kotlin,python,venv,libreoffice,microsoftoffice,vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,intellij,eclipse,gradle,java,scala,kotlin,python,venv,libreoffice,microsoftoffice,vim
+# Created by https://www.toptal.com/developers/gitignore/api/vim,java,venv,scala,linux,macos,python,gradle,kotlin,eclipse,windows,intellij,libreoffice,microsoftoffice,powershell
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim,java,venv,scala,linux,macos,python,gradle,kotlin,eclipse,windows,intellij,libreoffice,microsoftoffice,powershell
 
 ### Eclipse ###
 .metadata
@@ -280,6 +280,12 @@ Backup of *.doc*
 # Visio autosave temporary files
 *.~vsd*
 
+### PowerShell ###
+# Exclude packaged modules
+
+# Exclude .NET assemblies from source
+*.dll
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -499,4 +505,4 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,intellij,eclipse,gradle,java,scala,kotlin,python,venv,libreoffice,microsoftoffice,vim
+# End of https://www.toptal.com/developers/gitignore/api/vim,java,venv,scala,linux,macos,python,gradle,kotlin,eclipse,windows,intellij,libreoffice,microsoftoffice,powershell
