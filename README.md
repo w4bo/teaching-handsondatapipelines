@@ -9,9 +9,14 @@ This lab will cover:
 
 Each steps takes about 2 hours and covers both theory and practice.
 
-You can download this repo at the following link: https://github.com/w4bo/handsOnDataPipelines/archive/refs/heads/main.zip
+To start working on this porject:
+- Download this repo: https://github.com/w4bo/handsOnDataPipelines/archive/refs/heads/main.zip
+- Run the build script
+    - in Windows (both cmd and powershell) run `.\build.bat`
+    - in Linux run `./build.sh`
 
 ## Time schedule
+
 |           |           |
 |-          |-          |
 | 9.15      | begin     |
