@@ -2,13 +2,14 @@
 
 This lab will cover:
 
-- Data cleaning and preprocessing (on Python and Pandas)
-- Machine learning
-- Big data elaboration on Spark
-- OLAP and data visualization
+- Data cleaning and preprocessing (hands on Python and Pandas)
+- Machine learning (hands on Python and Sklearn)
+- Big data elaboration (hands on Scala and Spark)
+- OLAP and data visualization (hands on Tableau)
 
 Each steps takes about 2 hours and covers both theory and practice.
-At the end of each step, you will be provided with the solution of the exercise.
+
+You can download this repo at the following link: https://github.com/w4bo/handsOnDataPipelines/archive/refs/heads/main.zip
 
 ## Time schedule
 |           |           |
