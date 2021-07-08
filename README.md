@@ -2,7 +2,7 @@
 
 This lab will cover:
 
-- Data cleaning and preprocessing
+- Data cleaning and preprocessing (on Python and Pandas)
 - Machine learning
 - Big data elaboration on Spark
 - OLAP and data visualization
@@ -24,6 +24,10 @@ At the end of each step, you will be provided with the solution of the exercise.
 
 ## Technical requirements
 
+Tu run this lab you need to install
+- Docker. Ensure that docker is running by executing `docker run hello-world`
+- Tableau
+
 How many of you are familiar with...
 
 - Virtualization (`docker`)
@@ -33,7 +37,7 @@ How many of you are familiar with...
 - Big data processing (`spark`) 
 - OLAP and data visualization (`tableau`)
 
-To join this lab, you need to "install" the above mentioned software.
+Besides Tableau, all the necessary software is shipped with docker containers.
 
 ## Data cleaning and preprocessing
 ## Machine learning
