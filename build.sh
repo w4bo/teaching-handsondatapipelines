@@ -5,3 +5,4 @@ docker build -t lab02 .
 cd ../03-BigData
 docker pull apache/zeppelin:0.9.0
 cd ..
+pause
