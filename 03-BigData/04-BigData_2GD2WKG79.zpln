@@ -1,9 +1,91 @@
 {
   "paragraphs": [
     {
-      "text": "val riddle \u003d \"sopra la panca la capra campa sotto la panca capra crepa\"",
+      "text": "sc // the spark context (i.e., the application) has been already initialized",
       "user": "anonymous",
-      "dateUpdated": "2021-07-09 15:20:32.731",
+      "dateUpdated": "2021-07-13 14:31:22.122",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres60\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.SparkContext\u001b[0m \u003d org.apache.spark.SparkContext@36b20f03\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1626184608976_671692505",
+      "id": "paragraph_1626184608976_671692505",
+      "dateCreated": "2021-07-13 13:56:48.976",
+      "dateStarted": "2021-07-13 14:31:22.156",
+      "dateFinished": "2021-07-13 14:31:22.247",
+      "status": "FINISHED"
+    },
+    {
+      "text": "sc // from the spark context\n    .getConf.getAll // get the configuration\n    .filter(_._1.startsWith(\"spark\")) // keep only the string regarding sparks\n    .foreach(println(_)) // ... and print them",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-13 14:31:22.256",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(spark.driver.memory,1g)\n(spark.repl.class.outputDir,/tmp/spark7004006872584735152)\n(spark.repl.class.uri,spark://54b40fa293f4:38411/classes)\n(spark.webui.yarn.useProxy,false)\n(spark.executor.memory,1g)\n(spark.executor.instances,2)\n(spark.useHiveContext,true)\n(spark.master,local[*])\n(spark.driver.cores,1)\n(spark.driver.host,54b40fa293f4)\n(spark.scheduler.mode,FAIR)\n(spark.executor.id,driver)\n(spark.app.id,local-1626179829299)\n(spark.app.name,b64bf1b4-7784-4466-beb4-8e20bfc9f9be)\n(spark.driver.port,38411)\n(spark.executor.cores,1)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1626184950221_668055625",
+      "id": "paragraph_1626184950221_668055625",
+      "dateCreated": "2021-07-13 14:02:30.221",
+      "dateStarted": "2021-07-13 14:31:22.357",
+      "dateFinished": "2021-07-13 14:31:22.517",
+      "status": "FINISHED"
+    },
+    {
+      "text": "// let\u0027s create a simple example\nval riddle \u003d \"sopra la panca la capra campa sotto la panca capra crepa\"",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-13 14:31:22.587",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -37,14 +119,14 @@
       "jobName": "paragraph_1625738803400_1745387905",
       "id": "paragraph_1625738803400_1745387905",
       "dateCreated": "2021-07-08 10:06:43.401",
-      "dateStarted": "2021-07-09 15:20:32.752",
-      "dateFinished": "2021-07-09 15:20:32.842",
+      "dateStarted": "2021-07-13 14:31:22.607",
+      "dateFinished": "2021-07-13 14:31:22.693",
       "status": "FINISHED"
     },
     {
-      "text": "val rdd \u003d sc.parallelize(riddle.split(\" \")) // create an RDD from the `riddle` string",
+      "text": "val rdd \u003d sc.parallelize(riddle.split(\" \")) // create an RDD from the `riddle` string\n// each tuple of the RDD corresponds to a single word\n\n// why is an RDD and not its result returned?",
       "user": "anonymous",
-      "dateUpdated": "2021-07-09 15:20:32.851",
+      "dateUpdated": "2021-07-13 14:31:22.707",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -68,7 +150,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mrdd\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d ParallelCollectionRDD[179] at parallelize at \u003cconsole\u003e:32\n"
+            "data": "\u001b[1m\u001b[34mrdd\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d ParallelCollectionRDD[519] at parallelize at \u003cconsole\u003e:27\n"
           }
         ]
       },
@@ -78,14 +160,14 @@
       "jobName": "paragraph_1625738922982_961760574",
       "id": "paragraph_1625738922982_961760574",
       "dateCreated": "2021-07-08 10:08:42.982",
-      "dateStarted": "2021-07-09 15:20:32.952",
-      "dateFinished": "2021-07-09 15:20:33.146",
+      "dateStarted": "2021-07-13 14:31:22.808",
+      "dateFinished": "2021-07-13 14:31:22.940",
       "status": "FINISHED"
     },
     {
-      "text": "// Actions\nrdd.collect()",
+      "text": "// Actions\nrdd.collect() // compute the RDD",
       "user": "anonymous",
-      "dateUpdated": "2021-07-09 15:20:33.185",
+      "dateUpdated": "2021-07-13 14:31:23.033",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -109,7 +191,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres31\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(sopra, la, panca, la, capra, campa, sotto, la, panca, capra, crepa)\n"
+            "data": "\u001b[1m\u001b[34mres62\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(sopra, la, panca, la, capra, campa, sotto, la, panca, capra, crepa)\n"
           }
         ]
       },
@@ -122,7 +204,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://3bdd0cf0186e:4040/jobs/job?id\u003d37"
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d92"
             }
           ],
           "interpreterSettingId": "spark"
@@ -132,14 +214,14 @@
       "jobName": "paragraph_1625738959129_821495934",
       "id": "paragraph_1625738959129_821495934",
       "dateCreated": "2021-07-08 10:09:19.129",
-      "dateStarted": "2021-07-09 15:20:33.208",
-      "dateFinished": "2021-07-09 15:20:33.334",
+      "dateStarted": "2021-07-13 14:31:23.052",
+      "dateFinished": "2021-07-13 14:31:23.164",
       "status": "FINISHED"
     },
     {
-      "text": "// Transformations\nrdd\n    .map(s \u003d\u003e s.toUpperCase()) // transform each string in upper case (remember: map returns a new RDD with the same cardinality)\n    .filter(s \u003d\u003e s.startsWith(\"C\")) // keep only the strings beginning with \"C\" (remember: filter returns a new RDD with the same or smaller cardinality)\n    .flatMap(s \u003d\u003e s.toList) // explored each string into its characters (remember: flatMap returns a new RDD with the any cardinality)\n    .collect()",
+      "text": "// Transformations\nrdd\n    .map(s \u003d\u003e s.toUpperCase()) // transform each string in upper case (remember: map returns a new RDD with the same cardinality)\n    .filter(s \u003d\u003e s.startsWith(\"C\")) // keep only the strings beginning with \"C\" (remember: filter returns a new RDD with the same or smaller cardinality)\n    .flatMap(s \u003d\u003e s.toList) // explode each string into its characters (remember: flatMap returns a new RDD with the any cardinality)\n    .collect()",
       "user": "anonymous",
-      "dateUpdated": "2021-07-09 15:20:33.407",
+      "dateUpdated": "2021-07-13 14:31:23.252",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -163,7 +245,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres32\u001b[0m: \u001b[1m\u001b[32mArray[Char]\u001b[0m \u003d Array(C, A, P, R, A, C, A, M, P, A, C, A, P, R, A, C, R, E, P, A)\n"
+            "data": "\u001b[1m\u001b[34mres63\u001b[0m: \u001b[1m\u001b[32mArray[Char]\u001b[0m \u003d Array(C, A, P, R, A, C, A, M, P, A, C, A, P, R, A, C, R, E, P, A)\n"
           }
         ]
       },
@@ -176,7 +258,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://3bdd0cf0186e:4040/jobs/job?id\u003d38"
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d93"
             }
           ],
           "interpreterSettingId": "spark"
@@ -186,15 +268,15 @@
       "jobName": "paragraph_1625739256540_787795271",
       "id": "paragraph_1625739256540_787795271",
       "dateCreated": "2021-07-08 10:14:16.541",
-      "dateStarted": "2021-07-09 15:20:33.433",
-      "dateFinished": "2021-07-09 15:20:33.625",
+      "dateStarted": "2021-07-13 14:31:23.320",
+      "dateFinished": "2021-07-13 14:31:23.497",
       "status": "FINISHED"
     },
     {
       "text": "// A simple word count\nrdd\n    .map(s \u003d\u003e (s, 1)) // map each word to a tuple (word, 1); each tuple represent the count associate with a word\n    .reduceByKey((a, b) \u003d\u003e a + b) // group all the tuples with the same word and sum the counts\n    .sortBy(x \u003d\u003e x._2) // sort tuples by count\n    .collect() // get the values",
       "user": "anonymous",
-      "dateUpdated": "2021-07-09 15:20:33.627",
-      "progress": 50,
+      "dateUpdated": "2021-07-13 14:31:23.520",
+      "progress": 66,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -217,7 +299,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres33\u001b[0m: \u001b[1m\u001b[32mArray[(String, Int)]\u001b[0m \u003d Array((campa,1), (sotto,1), (crepa,1), (sopra,1), (panca,2), (capra,2), (la,3))\n"
+            "data": "\u001b[1m\u001b[34mres64\u001b[0m: \u001b[1m\u001b[32mArray[(String, Int)]\u001b[0m \u003d Array((campa,1), (sotto,1), (crepa,1), (sopra,1), (panca,2), (capra,2), (la,3))\n"
           }
         ]
       },
@@ -230,10 +312,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://3bdd0cf0186e:4040/jobs/job?id\u003d39"
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d94"
             },
             {
-              "jobUrl": "http://3bdd0cf0186e:4040/jobs/job?id\u003d40"
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d95"
             }
           ],
           "interpreterSettingId": "spark"
@@ -243,55 +325,14 @@
       "jobName": "paragraph_1625739017687_262430082",
       "id": "paragraph_1625739017687_262430082",
       "dateCreated": "2021-07-08 10:10:17.688",
-      "dateStarted": "2021-07-09 15:20:33.679",
-      "dateFinished": "2021-07-09 15:20:34.014",
+      "dateStarted": "2021-07-13 14:31:23.549",
+      "dateFinished": "2021-07-13 14:31:23.909",
       "status": "FINISHED"
     },
     {
-      "text": "// create a Dataset from a local file\nval foodmartDataset\n    spark\n        .read // read the file\n        .format(\"csv\") // which has a csv (comma separated value) format\n        .option(\"header\", \"true\") // and also contains a header\n        .load(\"/opt/zeppelin/notebook/datasets/foodmart.csv\") // specify the file location\n        .cache() // cache the RDD",
+      "text": "// create a DataFrame from a local file\nval foodmartDataset \u003d\n    spark\n        .read // read the file\n        .format(\"csv\") // which has a csv (comma separated value) format\n        .option(\"header\", \"true\") // and also contains a header\n        .load(\"/opt/zeppelin/notebook/datasets/foodmart.csv\") // specify the file location\n        .select(col(\"Product (Category)\").as(\"product\"), col(\"subcategory\"), col(\"category\"), col(\"unit sales\").cast(\"int\")) // select some of its columns\n        .cache() // why caching?",
       "user": "anonymous",
-      "dateUpdated": "2021-07-09 15:20:34.072",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "ERROR",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u003cconsole\u003e:3: \u001b[31merror: \u001b[0m\u0027\u003d\u0027 expected but \u0027;\u0027 found.\n    spark\n^\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1625842324384_1191242572",
-      "id": "paragraph_1625842324384_1191242572",
-      "dateCreated": "2021-07-09 14:52:04.384",
-      "dateStarted": "2021-07-09 15:20:34.095",
-      "dateFinished": "2021-07-09 15:20:34.118",
-      "status": "ERROR"
-    },
-    {
-      "text": "foodmartDataset.show() // and show some tuples",
-      "user": "anonymous",
-      "dateUpdated": "2021-07-09 15:19:57.609",
+      "dateUpdated": "2021-07-13 14:31:23.944",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -315,7 +356,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+---------+------------+-----------+----------+--------+-------------------+----------+----+--------------------+---------------+--------------------+-----------------+-------------------+---------------------+--------------+-----------------+------------+-------------------+--------+--------------+-------+------+--------------+----------+-----------+--------------+--------------------+--------------------+--------------------+--------------------+----------------+---------------+-----------------+-----------------+-----------+----------+--------+---------+--------------------+----------+-----+--------------+---------------+-------------+------------+-------------+----------------+-----------------+--------------------+-------------+-----------+-------------+----------------+----------+-----------+----------+\n|Birthdate|  Brand Name|    C. City|C. Country|C. State|           Category|Coffee Bar|Cost|Customer (Birthdate)|Customer (Card)|Customer (Education)|Customer (Income)|Customer (Location)|Customer (Occupation)|Customer (Sex)|Customer (Status)|  Department|          Education|End Date|        Family|Florist|Gender|Marital Status|Media Type|Member Card|    Occupation|     Product (Brand)|  Product (Category)|Product (Department)|    Product (Family)|Promotion (Cost)|Promotion (End)|Promotion (Media)|Promotion (Start)|    S. City|S. Country|S. State|Salad Bar|          Sales Date|Start Date|Store|Store (Coffee)|Store (Florist)|Store (Salad)|Store (Type)|Store (Video)|     Subcategory|Subcategory (Dep)|Subcategory (Family)|         Type|Video Store|Yearly Income|Numero di record|Store Cost|Store Sales|Unit Sales|\n+---------+------------+-----------+----------+--------+-------------------+----------+----+--------------------+---------------+--------------------+-----------------+-------------------+---------------------+--------------+-----------------+------------+-------------------+--------+--------------+-------+------+--------------+----------+-----------+--------------+--------------------+--------------------+--------------------+--------------------+----------------+---------------+-----------------+-----------------+-----------+----------+--------+---------+--------------------+----------+-----+--------------+---------------+-------------+------------+-------------+----------------+-----------------+--------------------+-------------+-----------+-------------+----------------+----------+-----------+----------+\n|2/25/1954|         CDR|Walla Walla|       USA|      WA|   Jams and Jellies|         0|   0|                3446|           3446|                3446|             3446|               3446|                 3446|          3446|             3446|Baking Goods| High School Degree|    null|          Food|      0|     F|             S|  No Media|     Bronze|        Manual|       CDR Apple Jam|       CDR Apple Jam|       CDR Apple Jam|       CDR Apple Jam|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|             Jam|              Jam|                 Jam|Small Grocery|          0|  $30K - $50K|               1|     3.048|       7.62|         3|\n|2/25/1954|   Landslide|Walla Walla|       USA|      WA|   Jams and Jellies|         0|   0|                3446|           3446|                3446|             3446|               3446|                 3446|          3446|             3446|Baking Goods| High School Degree|    null|          Food|      0|     F|             S|  No Media|     Bronze|        Manual|Landslide Creamy ...|Landslide Creamy ...|Landslide Creamy ...|Landslide Creamy ...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|   Peanut Butter|    Peanut Butter|       Peanut Butter|Small Grocery|          0|  $30K - $50K|               1|     1.974|        4.2|         3|\n|2/25/1954|   Fort West|Walla Walla|       USA|      WA|        Snack Foods|         0|   0|                3446|           3446|                3446|             3446|               3446|                 3446|          3446|             3446| Snack Foods| High School Degree|    null|          Food|      0|     F|             S|  No Media|     Bronze|        Manual|Fort West BBQ Pot...|Fort West BBQ Pot...|Fort West BBQ Pot...|Fort West BBQ Pot...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|           Chips|            Chips|               Chips|Small Grocery|          0|  $30K - $50K|               1|     5.238|      11.64|         3|\n|2/25/1954|     Horatio|Walla Walla|       USA|      WA|        Snack Foods|         0|   0|                3446|           3446|                3446|             3446|               3446|                 3446|          3446|             3446| Snack Foods| High School Degree|    null|          Food|      0|     F|             S|  No Media|     Bronze|        Manual|Horatio Raspberry...|Horatio Raspberry...|Horatio Raspberry...|Horatio Raspberry...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|     Dried Fruit|      Dried Fruit|         Dried Fruit|Small Grocery|          0|  $30K - $50K|               1|    1.8744|       5.68|         2|\n|2/25/1954|    Red Wing|Walla Walla|       USA|      WA|     Paper Products|         0|   0|                3446|           3446|                3446|             3446|               3446|                 3446|          3446|             3446|   Household| High School Degree|    null|Non-Consumable|      0|     F|             S|  No Media|     Bronze|        Manual|Red Wing Toilet P...|Red Wing Toilet P...|Red Wing Toilet P...|Red Wing Toilet P...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|     Paper Wipes|      Paper Wipes|         Paper Wipes|Small Grocery|          0|  $30K - $50K|               1|    1.7384|       4.24|         2|\n|12/4/1928|       Bravo|Walla Walla|       USA|      WA|        Canned Soup|         0|   0|                9870|           9870|                9870|             9870|               9870|                 9870|          9870|             9870|Canned Foods|    Partial College|    null|          Food|      0|     M|             S|  No Media|     Bronze|  Professional|Bravo Turkey Nood...|Bravo Turkey Nood...|Bravo Turkey Nood...|Bravo Turkey Nood...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|            Soup|             Soup|                Soup|Small Grocery|          0|$110K - $130K|               1|    0.9792|       2.72|         1|\n|12/4/1928|    Big Time|Walla Walla|       USA|      WA|              Pizza|         0|   0|                9870|           9870|                9870|             9870|               9870|                 9870|          9870|             9870|Frozen Foods|    Partial College|    null|          Food|      0|     M|             S|  No Media|     Bronze|  Professional|Big Time Frozen S...|Big Time Frozen S...|Big Time Frozen S...|Big Time Frozen S...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|           Pizza|            Pizza|               Pizza|Small Grocery|          0|$110K - $130K|               1|     0.296|        0.8|         1|\n|12/4/1928|      Atomic|Walla Walla|       USA|      WA|              Candy|         0|   0|                9870|           9870|                9870|             9870|               9870|                 9870|          9870|             9870|      Snacks|    Partial College|    null|          Food|      0|     M|             S|  No Media|     Bronze|  Professional|Atomic Mint Choco...|Atomic Mint Choco...|Atomic Mint Choco...|Atomic Mint Choco...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22| Chocolate Candy|  Chocolate Candy|     Chocolate Candy|Small Grocery|          0|$110K - $130K|               1|     0.432|        0.9|         1|\n|1/14/1969|         CDR|Walla Walla|       USA|      WA|   Jams and Jellies|         0|   0|                6675|           6675|                6675|             6675|               6675|                 6675|          6675|             6675|Baking Goods|    Graduate Degree|    null|          Food|      0|     M|             M|  No Media|     Golden|  Professional| CDR Grape Preserves| CDR Grape Preserves| CDR Grape Preserves| CDR Grape Preserves|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|       Preserves|        Preserves|           Preserves|Small Grocery|          0| $90K - $110K|               1|    1.2556|       2.92|         2|\n|1/14/1969|        Moms|Walla Walla|       USA|      WA|               Meat|         0|   0|                6675|           6675|                6675|             6675|               6675|                 6675|          6675|             6675|        Deli|    Graduate Degree|    null|          Food|      0|     M|             M|  No Media|     Golden|  Professional|   Moms Pimento Loaf|   Moms Pimento Loaf|   Moms Pimento Loaf|   Moms Pimento Loaf|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|         Bologna|          Bologna|             Bologna|Small Grocery|          0| $90K - $110K|               1|    0.7328|       2.29|         1|\n|1/14/1969|    Big Time|Walla Walla|       USA|      WA|               Meat|         0|   0|                6675|           6675|                6675|             6675|               6675|                 6675|          6675|             6675|Frozen Foods|    Graduate Degree|    null|          Food|      0|     M|             M|  No Media|     Golden|  Professional|Big Time Frozen C...|Big Time Frozen C...|Big Time Frozen C...|Big Time Frozen C...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|  Frozen Chicken|   Frozen Chicken|      Frozen Chicken|Small Grocery|          0| $90K - $110K|               1|    0.8658|       2.22|         1|\n|1/14/1969|       Ebony|Walla Walla|       USA|      WA|         Vegetables|         0|   0|                6675|           6675|                6675|             6675|               6675|                 6675|          6675|             6675|     Produce|    Graduate Degree|    null|          Food|      0|     M|             M|  No Media|     Golden|  Professional|  Ebony Green Pepper|  Ebony Green Pepper|  Ebony Green Pepper|  Ebony Green Pepper|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|Fresh Vegetables| Fresh Vegetables|    Fresh Vegetables|Small Grocery|          0| $90K - $110K|               1|      2.65|        5.3|         2|\n|1/14/1969|   Fort West|Walla Walla|       USA|      WA|        Snack Foods|         0|   0|                6675|           6675|                6675|             6675|               6675|                 6675|          6675|             6675| Snack Foods|    Graduate Degree|    null|          Food|      0|     M|             M|  No Media|     Golden|  Professional|Fort West Chocola...|Fort West Chocola...|Fort West Chocola...|Fort West Chocola...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|         Cookies|          Cookies|             Cookies|Small Grocery|          0| $90K - $110K|               1|     1.519|        3.1|         2|\n|1/14/1969|   Cormorant|Walla Walla|       USA|      WA|   Kitchen Products|         0|   0|                6675|           6675|                6675|             6675|               6675|                 6675|          6675|             6675|   Household|    Graduate Degree|    null|Non-Consumable|      0|     M|             M|  No Media|     Golden|  Professional|Cormorant Copper ...|Cormorant Copper ...|Cormorant Copper ...|Cormorant Copper ...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|    Pot Cleaners|     Pot Cleaners|        Pot Cleaners|Small Grocery|          0| $90K - $110K|               1|     0.952|       2.72|         1|\n|2/24/1912|    BBB Best|Walla Walla|       USA|      WA|   Jams and Jellies|         0|   0|                3549|           3549|                3549|             3549|               3549|                 3549|          3549|             3549|Baking Goods|Partial High School|    null|          Food|      0|     F|             M|  No Media|     Normal|        Manual|  BBB Best Grape Jam|  BBB Best Grape Jam|  BBB Best Grape Jam|  BBB Best Grape Jam|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|             Jam|              Jam|                 Jam|Small Grocery|          0|  $10K - $30K|               1|      1.14|        3.8|         2|\n|2/24/1912|    High Top|Walla Walla|       USA|      WA|Packaged Vegetables|         0|   0|                3549|           3549|                3549|             3549|               3549|                 3549|          3549|             3549|     Produce|Partial High School|    null|          Food|      0|     F|             M|  No Media|     Normal|        Manual|  High Top Firm Tofu|  High Top Firm Tofu|  High Top Firm Tofu|  High Top Firm Tofu|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|            Tofu|             Tofu|                Tofu|Small Grocery|          0|  $10K - $30K|               1|    1.4112|       3.36|         1|\n|2/24/1912|High Quality|Walla Walla|       USA|      WA|   Kitchen Products|         0|   0|                3549|           3549|                3549|             3549|               3549|                 3549|          3549|             3549|   Household|Partial High School|    null|Non-Consumable|      0|     F|             M|  No Media|     Normal|        Manual|High Quality Copp...|High Quality Copp...|High Quality Copp...|High Quality Copp...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|   Pot Scrubbers|    Pot Scrubbers|       Pot Scrubbers|Small Grocery|          0|  $10K - $30K|               1|     2.021|        4.3|         2|\n|4/27/1923|       Plato|Walla Walla|       USA|      WA|       Baking Goods|         0|   0|                9139|           9139|                9139|             9139|               9139|                 9139|          9139|             9139|Baking Goods|Partial High School|    null|          Food|      0|     F|             S|  No Media|     Normal|Skilled Manual|   Plato Brown Sugar|   Plato Brown Sugar|   Plato Brown Sugar|   Plato Brown Sugar|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|           Sugar|            Sugar|               Sugar|Small Grocery|          0|  $10K - $30K|               1|    1.2648|       3.72|         3|\n|4/27/1923|       Ebony|Walla Walla|       USA|      WA|              Fruit|         0|   0|                9139|           9139|                9139|             9139|               9139|                 9139|          9139|             9139|     Produce|Partial High School|    null|          Food|      0|     F|             S|  No Media|     Normal|Skilled Manual|     Ebony Honey Dew|     Ebony Honey Dew|     Ebony Honey Dew|     Ebony Honey Dew|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|     Fresh Fruit|      Fresh Fruit|         Fresh Fruit|Small Grocery|          0|  $10K - $30K|               1|     0.474|       1.58|         1|\n|4/27/1923| Best Choice|Walla Walla|       USA|      WA|        Snack Foods|         0|   0|                9139|           9139|                9139|             9139|               9139|                 9139|          9139|             9139| Snack Foods|Partial High School|    null|          Food|      0|     F|             S|  No Media|     Normal|Skilled Manual|Best Choice Chees...|Best Choice Chees...|Best Choice Chees...|Best Choice Chees...|               0|              0|                0|                0|Walla Walla|       USA|      WA|        0|1/11/1997 12:00:0...|      null|   22|            22|             22|           22|          22|           22|        Crackers|         Crackers|            Crackers|Small Grocery|          0|  $10K - $30K|               1|    0.6068|       1.64|         2|\n+---------+------------+-----------+----------+--------+-------------------+----------+----+--------------------+---------------+--------------------+-----------------+-------------------+---------------------+--------------+-----------------+------------+-------------------+--------+--------------+-------+------+--------------+----------+-----------+--------------+--------------------+--------------------+--------------------+--------------------+----------------+---------------+-----------------+-----------------+-----------+----------+--------+---------+--------------------+----------+-----+--------------+---------------+-------------+------------+-------------+----------------+-----------------+--------------------+-------------+-----------+-------------+----------------+----------+-----------+----------+\nonly showing top 20 rows\n\n"
+            "data": "\u001b[1m\u001b[34mfoodmartDataset\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [product: string, subcategory: string ... 2 more fields]\n"
           }
         ]
       },
@@ -328,7 +369,115 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://3bdd0cf0186e:4040/jobs/job?id\u003d32"
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d96"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1625842324384_1191242572",
+      "id": "paragraph_1625842324384_1191242572",
+      "dateCreated": "2021-07-09 14:52:04.384",
+      "dateStarted": "2021-07-13 14:31:23.964",
+      "dateFinished": "2021-07-13 14:31:24.373",
+      "status": "FINISHED"
+    },
+    {
+      "text": "foodmartDataset.show() // and show some of its tuples",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-13 14:31:24.464",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------+----------------+-------------------+----------+\n|             product|     subcategory|           category|unit sales|\n+--------------------+----------------+-------------------+----------+\n|       CDR Apple Jam|             Jam|   Jams and Jellies|         3|\n|Landslide Creamy ...|   Peanut Butter|   Jams and Jellies|         3|\n|Fort West BBQ Pot...|           Chips|        Snack Foods|         3|\n|Horatio Raspberry...|     Dried Fruit|        Snack Foods|         2|\n|Red Wing Toilet P...|     Paper Wipes|     Paper Products|         2|\n|Bravo Turkey Nood...|            Soup|        Canned Soup|         1|\n|Big Time Frozen S...|           Pizza|              Pizza|         1|\n|Atomic Mint Choco...| Chocolate Candy|              Candy|         1|\n| CDR Grape Preserves|       Preserves|   Jams and Jellies|         2|\n|   Moms Pimento Loaf|         Bologna|               Meat|         1|\n|Big Time Frozen C...|  Frozen Chicken|               Meat|         1|\n|  Ebony Green Pepper|Fresh Vegetables|         Vegetables|         2|\n|Fort West Chocola...|         Cookies|        Snack Foods|         2|\n|Cormorant Copper ...|    Pot Cleaners|   Kitchen Products|         1|\n|  BBB Best Grape Jam|             Jam|   Jams and Jellies|         2|\n|  High Top Firm Tofu|            Tofu|Packaged Vegetables|         1|\n|High Quality Copp...|   Pot Scrubbers|   Kitchen Products|         2|\n|   Plato Brown Sugar|           Sugar|       Baking Goods|         3|\n|     Ebony Honey Dew|     Fresh Fruit|              Fruit|         1|\n|Best Choice Chees...|        Crackers|        Snack Foods|         2|\n+--------------------+----------------+-------------------+----------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d97"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1626186059682_1913164141",
+      "id": "paragraph_1626186059682_1913164141",
+      "dateCreated": "2021-07-13 14:20:59.682",
+      "dateStarted": "2021-07-13 14:31:24.483",
+      "dateFinished": "2021-07-13 14:31:24.641",
+      "status": "FINISHED"
+    },
+    {
+      "text": "// show only the sales for category \u003d \u0027Pizza\u0027\nfoodmartDataset\n    .filter(\"category \u003d \u0027Pizza\u0027\") // apply a selection clause\n    .show(20, false)",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-13 14:31:24.685",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------------------------------+-----------+--------+----------+\n|product                          |subcategory|category|unit sales|\n+---------------------------------+-----------+--------+----------+\n|Big Time Frozen Sausage Pizza    |Pizza      |Pizza   |1         |\n|Big Time Frozen Mushroom Pizza   |Pizza      |Pizza   |1         |\n|Imagine Frozen Sausage Pizza     |Pizza      |Pizza   |1         |\n|Imagine Frozen Pepperoni Pizza   |Pizza      |Pizza   |2         |\n|Imagine Frozen Pepperoni Pizza   |Pizza      |Pizza   |1         |\n|PigTail Frozen Cheese Pizza      |Pizza      |Pizza   |2         |\n|PigTail Frozen Pepperoni Pizza   |Pizza      |Pizza   |2         |\n|Carrington Frozen Pepperoni Pizza|Pizza      |Pizza   |2         |\n|PigTail Frozen Cheese Pizza      |Pizza      |Pizza   |1         |\n|PigTail Frozen Mushroom Pizza    |Pizza      |Pizza   |2         |\n|Big Time Frozen Pepperoni Pizza  |Pizza      |Pizza   |1         |\n|Big Time Frozen Cheese Pizza     |Pizza      |Pizza   |2         |\n|Golden Frozen Sausage Pizza      |Pizza      |Pizza   |2         |\n|Big Time Frozen Sausage Pizza    |Pizza      |Pizza   |1         |\n|Carrington Frozen Pepperoni Pizza|Pizza      |Pizza   |3         |\n|Big Time Frozen Sausage Pizza    |Pizza      |Pizza   |2         |\n|Imagine Frozen Cheese Pizza      |Pizza      |Pizza   |3         |\n|Carrington Frozen Pepperoni Pizza|Pizza      |Pizza   |3         |\n|Carrington Frozen Sausage Pizza  |Pizza      |Pizza   |4         |\n|Big Time Frozen Mushroom Pizza   |Pizza      |Pizza   |2         |\n+---------------------------------+-----------+--------+----------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d98"
             }
           ],
           "interpreterSettingId": "spark"
@@ -338,15 +487,72 @@
       "jobName": "paragraph_1625843117680_1979385895",
       "id": "paragraph_1625843117680_1979385895",
       "dateCreated": "2021-07-09 15:05:17.680",
-      "dateStarted": "2021-07-09 15:19:20.249",
-      "dateFinished": "2021-07-09 15:19:20.516",
+      "dateStarted": "2021-07-13 14:31:24.706",
+      "dateFinished": "2021-07-13 14:31:24.902",
       "status": "FINISHED"
     },
     {
-      "text": "foodmartDataset\n    .select(col(\"Product (Category)\").as(\"product\"), col(\"subcategory\"), col(\"category\"), col(\"unit sales\").cast(\"int\")) // , subcategory, category, unit sales, store sales, store cost\n    .groupBy(\"category\")\n    .sum(\"unit sales\")\n    .orderBy(\"sum(unit sales)\")\n    .show()",
+      "text": "// count all the product sales\nval allSales \u003d foodmartDataset.count()\n\n// count the distinct products\nval distinctProducts \u003d \n    foodmartDataset\n        .select(\"product\") // select the products only\n        .distinct() // get the distinct values\n        .count() // and count them\n",
       "user": "anonymous",
-      "dateUpdated": "2021-07-09 15:20:00.251",
-      "progress": 63,
+      "dateUpdated": "2021-07-13 14:31:24.906",
+      "progress": 48,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mallSales\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 86837\n\u001b[1m\u001b[34mdistinctProducts\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 1559\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d99"
+            },
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d100"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1626186325649_1621764430",
+      "id": "paragraph_1626186325649_1621764430",
+      "dateCreated": "2021-07-13 14:25:25.649",
+      "dateStarted": "2021-07-13 14:31:24.950",
+      "dateFinished": "2021-07-13 14:31:26.344",
+      "status": "FINISHED"
+    },
+    {
+      "text": "// return the amount of sales by category\nfoodmartDataset // given the dataframe\n    .groupBy(\"category\") // group all tuples by category\n    .sum(\"unit sales\") // sum the unit sales\n    .orderBy(\"sum(unit sales)\") // and sort the result\n    .show() // compute the result",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-13 14:31:26.354",
+      "progress": 79,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -382,7 +588,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://3bdd0cf0186e:4040/jobs/job?id\u003d31"
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d101"
             }
           ],
           "interpreterSettingId": "spark"
@@ -392,8 +598,157 @@
       "jobName": "paragraph_1625843495878_2127914479",
       "id": "paragraph_1625843495878_2127914479",
       "dateCreated": "2021-07-09 15:11:35.878",
-      "dateStarted": "2021-07-09 15:19:06.874",
-      "dateFinished": "2021-07-09 15:19:08.234",
+      "dateStarted": "2021-07-13 14:31:26.396",
+      "dateFinished": "2021-07-13 14:31:27.499",
+      "status": "FINISHED"
+    },
+    {
+      "text": "// get the number of distinct products with category \u003d \u0027Pizza\u0027\nfoodmartDataset\n    .filter(\"category \u003d \u0027Pizza\u0027\")\n    .select(\"product\") // select the products only\n    .distinct() // get the distinct values\n    .count() // and count them",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-13 14:31:27.593",
+      "progress": 35,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres68\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 20\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d102"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1626185549421_406391997",
+      "id": "paragraph_1626185549421_406391997",
+      "dateCreated": "2021-07-13 14:12:29.421",
+      "dateStarted": "2021-07-13 14:31:27.612",
+      "dateFinished": "2021-07-13 14:31:28.619",
+      "status": "FINISHED"
+    },
+    {
+      "text": "// get the average sales by category\nfoodmartDataset\n    .groupBy(\"category\") // select the products only\n    .avg(\"unit sales\")\n    .show()",
+      "user": "anonymous",
+      "dateUpdated": "2021-07-13 14:31:28.712",
+      "progress": 39,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+------------------+\n|           category|   avg(unit sales)|\n+-------------------+------------------+\n|      Miscellaneous|3.1563517915309447|\n|    Breakfast Foods|3.0648250460405158|\n|   Canned Anchovies| 3.114186851211073|\n|    Frozen Desserts| 3.045745204131825|\n|      Starchy Foods|3.1117681845062095|\n|       Baking Goods| 3.072426470588235|\n|   Plastic Products| 3.046740467404674|\n|   Kitchen Products|3.0919117647058822|\n|            Candles| 3.029739776951673|\n|  Cleaning Supplies| 3.080572963294539|\n|Packaged Vegetables|3.0136054421768708|\n|          Specialty|3.0811287477954146|\n|        Side Dishes| 3.085308056872038|\n|               Meat| 3.079874354947274|\n|      Beer and Wine|3.0815682739972963|\n|   Jams and Jellies|3.0734229576008274|\n|      Hot Beverages| 3.092020129403307|\n|              Pizza|3.0905695611577966|\n|         Vegetables|3.0774983640272975|\n|     Frozen Entrees|3.0773809523809526|\n+-------------------+------------------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d103"
+            },
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d104"
+            },
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d105"
+            },
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d106"
+            },
+            {
+              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d107"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1626185613032_1090434638",
+      "id": "paragraph_1626185613032_1090434638",
+      "dateCreated": "2021-07-13 14:13:33.032",
+      "dateStarted": "2021-07-13 14:31:28.733",
+      "dateFinished": "2021-07-13 14:31:29.310",
+      "status": "FINISHED"
+    },
+    {
+      "user": "anonymous",
+      "dateUpdated": "2021-07-13 14:31:29.333",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1626186500562_1097934745",
+      "id": "paragraph_1626186500562_1097934745",
+      "dateCreated": "2021-07-13 14:28:20.562",
       "status": "FINISHED"
     }
   ],
