@@ -7,27 +7,14 @@ This lab will cover:
 - Big data elaboration (hands on Scala and Spark)
 - OLAP and data visualization (hands on Tableau)
 
-Each steps takes about 2 hours and covers both theory and practice.
+Each steps covers both theory and practice.
 
-To start working on this porject:
+To start working on this project:
 - Download and unzip this repo: https://github.com/w4bo/handsOnDataPipelines/archive/refs/heads/main.zip
 - Enter the unzipped directory
 - Run the build script
     - in Windows (both cmd and powershell) run `.\build.bat`
     - in Linux run `./build.sh`
-
-## Time schedule
-
-|           |           |
-|-          |-          |
-| 9.15      | begin     |
-| 10.30-40  | break     |
-| 11.30-40  | break     |
-| 13-14     | launch    |
-| 15.30-40  | break     |
-| 16.30-40  | break     |
-| 17.45     | end       |
-
 
 ## Technical requirements
 
@@ -44,9 +31,4 @@ How many of you are familiar with...
 - Big data processing (`spark`) 
 - OLAP and data visualization (`tableau`)
 
-Besides Tableau, all the necessary software is shipped with docker containers.
-
-## Data cleaning and preprocessing
-## Machine learning
-## Big data elaboration on Spark
-## OLAP and data visualization
+Besides Tableau, all the necessary software is shipped with docker containers
