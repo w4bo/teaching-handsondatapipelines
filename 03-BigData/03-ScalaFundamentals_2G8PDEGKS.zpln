@@ -22,15 +22,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres34\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m \u003d Hello, world!\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
@@ -62,15 +53,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34ma\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m \u003d 2\n\u001b[1m\u001b[34mb\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m \u003d 7\n\u001b[1m\u001b[34mc\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m \u003d 20\n\u001b[1m\u001b[34md\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m \u003d 7\n\u001b[1m\u001b[34me\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m \u003d 1\n\u001b[1m\u001b[34mf\u001b[0m: \u001b[1m\u001b[32mDouble\u001b[0m \u003d 8.0\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -104,15 +86,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34ma\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d false\n\u001b[1m\u001b[34mb\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d true\n\u001b[1m\u001b[34mc\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d false\n\u001b[1m\u001b[34md\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d true\n\u001b[1m\u001b[34me\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d true\n\u001b[1m\u001b[34mf\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d false\n\u001b[1m\u001b[34mg\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d false\n\u001b[1m\u001b[34mh\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d true\n\u001b[1m\u001b[34mi\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d true\n\u001b[1m\u001b[34mj\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d false\n\u001b[1m\u001b[34mk\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d true\n\u001b[1m\u001b[34ml\u001b[0m: \u001b[1m\u001b[32mBoolean\u001b[0m \u003d true\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
@@ -144,15 +117,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "I\u0027m Scala. Nice to meet you!\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -186,15 +150,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34msomeVar\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m \u003d 5\n\u001b[1m\u001b[34mriddle\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(sopra, la, campa, la, capra, campa)\n\u001b[1m\u001b[34mcharacters\u001b[0m: \u001b[1m\u001b[32mList[Char]\u001b[0m \u003d List(c, a, p, r, a)\n\u001b[1m\u001b[34mli\u001b[0m: \u001b[1m\u001b[32mList[Int]\u001b[0m \u003d List(1, 2, 4, 3)\nli: List[Int] \u003d List(1, 2, 4, 3)\nli: List[Int] \u003d List(1, 2, 4, 3)\nli: List[Int] \u003d List(1, 2, 4, 3)\nli: List[Int] \u003d List(1, 2, 4, 3)\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
@@ -227,15 +182,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "someVar is smaller than 10.\ndog is a mammal\ncat is a mammal\nmouse is a mammal\n\u001b[1m\u001b[34msomeVar\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m \u003d 5\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
@@ -267,15 +213,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "x is 5 and y is 6\n\u001b[1m\u001b[34madd\u001b[0m: \u001b[1m\u001b[32m(x: Int, y: Int)Int\u001b[0m\n\u001b[1m\u001b[34mres37\u001b[0m: \u001b[1m\u001b[32mInt\u001b[0m \u003d 11\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -327,7 +264,5 @@
   "config": {
     "isZeppelinNotebookCronEnable": false
   },
-  "info": {
-    "isRunning": true
-  }
+  "info": {}
 }

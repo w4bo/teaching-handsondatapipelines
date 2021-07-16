@@ -3,7 +3,7 @@
     {
       "text": "sc // the spark context (i.e., the application) has been already initialized",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:22.122",
+      "dateUpdated": "2021-07-16 12:37:26.176",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -21,15 +21,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres60\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.SparkContext\u001b[0m \u003d org.apache.spark.SparkContext@36b20f03\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -37,14 +28,14 @@
       "jobName": "paragraph_1626184608976_671692505",
       "id": "paragraph_1626184608976_671692505",
       "dateCreated": "2021-07-13 13:56:48.976",
-      "dateStarted": "2021-07-13 14:31:22.156",
-      "dateFinished": "2021-07-13 14:31:22.247",
+      "dateStarted": "2021-07-16 12:37:26.209",
+      "dateFinished": "2021-07-16 12:37:26.375",
       "status": "FINISHED"
     },
     {
       "text": "sc // from the spark context\n    .getConf.getAll // get the configuration\n    .filter(_._1.startsWith(\"spark\")) // keep only the string regarding sparks\n    .foreach(println(_)) // ... and print them",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:22.256",
+      "dateUpdated": "2021-07-16 12:37:26.400",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -62,15 +53,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "(spark.driver.memory,1g)\n(spark.repl.class.outputDir,/tmp/spark7004006872584735152)\n(spark.repl.class.uri,spark://54b40fa293f4:38411/classes)\n(spark.webui.yarn.useProxy,false)\n(spark.executor.memory,1g)\n(spark.executor.instances,2)\n(spark.useHiveContext,true)\n(spark.master,local[*])\n(spark.driver.cores,1)\n(spark.driver.host,54b40fa293f4)\n(spark.scheduler.mode,FAIR)\n(spark.executor.id,driver)\n(spark.app.id,local-1626179829299)\n(spark.app.name,b64bf1b4-7784-4466-beb4-8e20bfc9f9be)\n(spark.driver.port,38411)\n(spark.executor.cores,1)\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -78,14 +60,14 @@
       "jobName": "paragraph_1626184950221_668055625",
       "id": "paragraph_1626184950221_668055625",
       "dateCreated": "2021-07-13 14:02:30.221",
-      "dateStarted": "2021-07-13 14:31:22.357",
-      "dateFinished": "2021-07-13 14:31:22.517",
+      "dateStarted": "2021-07-16 12:37:26.428",
+      "dateFinished": "2021-07-16 12:37:26.708",
       "status": "FINISHED"
     },
     {
-      "text": "// let\u0027s create a simple example\nval riddle \u003d \"sopra la panca la capra campa sotto la panca capra crepa\"",
+      "text": "// let\u0027s create a simple example\nval riddle \u003d \"sopra la panca la capra campa sotto la panca la capra crepa\"",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:22.587",
+      "dateUpdated": "2021-07-16 12:37:26.722",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -103,15 +85,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mriddle\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m \u003d sopra la panca la capra campa sotto la panca capra crepa\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -119,14 +92,14 @@
       "jobName": "paragraph_1625738803400_1745387905",
       "id": "paragraph_1625738803400_1745387905",
       "dateCreated": "2021-07-08 10:06:43.401",
-      "dateStarted": "2021-07-13 14:31:22.607",
-      "dateFinished": "2021-07-13 14:31:22.693",
+      "dateStarted": "2021-07-16 12:37:26.777",
+      "dateFinished": "2021-07-16 12:37:26.959",
       "status": "FINISHED"
     },
     {
       "text": "val rdd \u003d sc.parallelize(riddle.split(\" \")) // create an RDD from the `riddle` string\n// each tuple of the RDD corresponds to a single word\n\n// why is an RDD and not its result returned?",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:22.707",
+      "dateUpdated": "2021-07-16 12:37:27.057",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -144,15 +117,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mrdd\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d ParallelCollectionRDD[519] at parallelize at \u003cconsole\u003e:27\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -160,14 +124,14 @@
       "jobName": "paragraph_1625738922982_961760574",
       "id": "paragraph_1625738922982_961760574",
       "dateCreated": "2021-07-08 10:08:42.982",
-      "dateStarted": "2021-07-13 14:31:22.808",
-      "dateFinished": "2021-07-13 14:31:22.940",
+      "dateStarted": "2021-07-16 12:37:27.088",
+      "dateFinished": "2021-07-16 12:37:27.303",
       "status": "FINISHED"
     },
     {
       "text": "// Actions\nrdd.collect() // compute the RDD",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:23.033",
+      "dateUpdated": "2021-07-16 12:37:27.380",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -185,15 +149,6 @@
       "settings": {
         "params": {},
         "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres62\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m \u003d Array(sopra, la, panca, la, capra, campa, sotto, la, panca, capra, crepa)\n"
-          }
-        ]
       },
       "apps": [],
       "runtimeInfos": {
@@ -204,7 +159,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d92"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d16"
             }
           ],
           "interpreterSettingId": "spark"
@@ -214,14 +169,14 @@
       "jobName": "paragraph_1625738959129_821495934",
       "id": "paragraph_1625738959129_821495934",
       "dateCreated": "2021-07-08 10:09:19.129",
-      "dateStarted": "2021-07-13 14:31:23.052",
-      "dateFinished": "2021-07-13 14:31:23.164",
+      "dateStarted": "2021-07-16 12:37:27.407",
+      "dateFinished": "2021-07-16 12:37:27.575",
       "status": "FINISHED"
     },
     {
       "text": "// Transformations\nrdd\n    .map(s \u003d\u003e s.toUpperCase()) // transform each string in upper case (remember: map returns a new RDD with the same cardinality)\n    .filter(s \u003d\u003e s.startsWith(\"C\")) // keep only the strings beginning with \"C\" (remember: filter returns a new RDD with the same or smaller cardinality)\n    .flatMap(s \u003d\u003e s.toList) // explode each string into its characters (remember: flatMap returns a new RDD with the any cardinality)\n    .collect()",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:23.252",
+      "dateUpdated": "2021-07-16 12:37:27.605",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -240,15 +195,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres63\u001b[0m: \u001b[1m\u001b[32mArray[Char]\u001b[0m \u003d Array(C, A, P, R, A, C, A, M, P, A, C, A, P, R, A, C, R, E, P, A)\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -258,7 +204,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d93"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d17"
             }
           ],
           "interpreterSettingId": "spark"
@@ -268,15 +214,15 @@
       "jobName": "paragraph_1625739256540_787795271",
       "id": "paragraph_1625739256540_787795271",
       "dateCreated": "2021-07-08 10:14:16.541",
-      "dateStarted": "2021-07-13 14:31:23.320",
-      "dateFinished": "2021-07-13 14:31:23.497",
+      "dateStarted": "2021-07-16 12:37:27.627",
+      "dateFinished": "2021-07-16 12:37:27.927",
       "status": "FINISHED"
     },
     {
       "text": "// A simple word count\nrdd\n    .map(s \u003d\u003e (s, 1)) // map each word to a tuple (word, 1); each tuple represent the count associate with a word\n    .reduceByKey((a, b) \u003d\u003e a + b) // group all the tuples with the same word and sum the counts\n    .sortBy(x \u003d\u003e x._2) // sort tuples by count\n    .collect() // get the values",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:23.520",
-      "progress": 66,
+      "dateUpdated": "2021-07-16 12:37:27.961",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -294,15 +240,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres64\u001b[0m: \u001b[1m\u001b[32mArray[(String, Int)]\u001b[0m \u003d Array((campa,1), (sotto,1), (crepa,1), (sopra,1), (panca,2), (capra,2), (la,3))\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -312,10 +249,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d94"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d18"
             },
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d95"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d19"
             }
           ],
           "interpreterSettingId": "spark"
@@ -325,15 +262,15 @@
       "jobName": "paragraph_1625739017687_262430082",
       "id": "paragraph_1625739017687_262430082",
       "dateCreated": "2021-07-08 10:10:17.688",
-      "dateStarted": "2021-07-13 14:31:23.549",
-      "dateFinished": "2021-07-13 14:31:23.909",
+      "dateStarted": "2021-07-16 12:37:28.027",
+      "dateFinished": "2021-07-16 12:37:28.509",
       "status": "FINISHED"
     },
     {
       "text": "// create a DataFrame from a local file\nval foodmartDataset \u003d\n    spark\n        .read // read the file\n        .format(\"csv\") // which has a csv (comma separated value) format\n        .option(\"header\", \"true\") // and also contains a header\n        .load(\"/opt/zeppelin/notebook/datasets/foodmart.csv\") // specify the file location\n        .select(col(\"Product (Category)\").as(\"product\"), col(\"subcategory\"), col(\"category\"), col(\"unit sales\").cast(\"int\")) // select some of its columns\n        .cache() // why caching?",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:23.944",
-      "progress": 0,
+      "dateUpdated": "2021-07-16 12:37:28.527",
+      "progress": 100,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -351,15 +288,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mfoodmartDataset\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [product: string, subcategory: string ... 2 more fields]\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -369,7 +297,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d96"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d20"
             }
           ],
           "interpreterSettingId": "spark"
@@ -379,14 +307,14 @@
       "jobName": "paragraph_1625842324384_1191242572",
       "id": "paragraph_1625842324384_1191242572",
       "dateCreated": "2021-07-09 14:52:04.384",
-      "dateStarted": "2021-07-13 14:31:23.964",
-      "dateFinished": "2021-07-13 14:31:24.373",
+      "dateStarted": "2021-07-16 12:37:28.549",
+      "dateFinished": "2021-07-16 12:37:29.075",
       "status": "FINISHED"
     },
     {
       "text": "foodmartDataset.show() // and show some of its tuples",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:24.464",
+      "dateUpdated": "2021-07-16 12:37:29.149",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -405,15 +333,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "+--------------------+----------------+-------------------+----------+\n|             product|     subcategory|           category|unit sales|\n+--------------------+----------------+-------------------+----------+\n|       CDR Apple Jam|             Jam|   Jams and Jellies|         3|\n|Landslide Creamy ...|   Peanut Butter|   Jams and Jellies|         3|\n|Fort West BBQ Pot...|           Chips|        Snack Foods|         3|\n|Horatio Raspberry...|     Dried Fruit|        Snack Foods|         2|\n|Red Wing Toilet P...|     Paper Wipes|     Paper Products|         2|\n|Bravo Turkey Nood...|            Soup|        Canned Soup|         1|\n|Big Time Frozen S...|           Pizza|              Pizza|         1|\n|Atomic Mint Choco...| Chocolate Candy|              Candy|         1|\n| CDR Grape Preserves|       Preserves|   Jams and Jellies|         2|\n|   Moms Pimento Loaf|         Bologna|               Meat|         1|\n|Big Time Frozen C...|  Frozen Chicken|               Meat|         1|\n|  Ebony Green Pepper|Fresh Vegetables|         Vegetables|         2|\n|Fort West Chocola...|         Cookies|        Snack Foods|         2|\n|Cormorant Copper ...|    Pot Cleaners|   Kitchen Products|         1|\n|  BBB Best Grape Jam|             Jam|   Jams and Jellies|         2|\n|  High Top Firm Tofu|            Tofu|Packaged Vegetables|         1|\n|High Quality Copp...|   Pot Scrubbers|   Kitchen Products|         2|\n|   Plato Brown Sugar|           Sugar|       Baking Goods|         3|\n|     Ebony Honey Dew|     Fresh Fruit|              Fruit|         1|\n|Best Choice Chees...|        Crackers|        Snack Foods|         2|\n+--------------------+----------------+-------------------+----------+\nonly showing top 20 rows\n\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -423,7 +342,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d97"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d21"
             }
           ],
           "interpreterSettingId": "spark"
@@ -433,14 +352,14 @@
       "jobName": "paragraph_1626186059682_1913164141",
       "id": "paragraph_1626186059682_1913164141",
       "dateCreated": "2021-07-13 14:20:59.682",
-      "dateStarted": "2021-07-13 14:31:24.483",
-      "dateFinished": "2021-07-13 14:31:24.641",
+      "dateStarted": "2021-07-16 12:37:29.173",
+      "dateFinished": "2021-07-16 12:37:29.507",
       "status": "FINISHED"
     },
     {
       "text": "// show only the sales for category \u003d \u0027Pizza\u0027\nfoodmartDataset\n    .filter(\"category \u003d \u0027Pizza\u0027\") // apply a selection clause\n    .show(20, false)",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:24.685",
+      "dateUpdated": "2021-07-16 12:37:29.578",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -459,15 +378,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "+---------------------------------+-----------+--------+----------+\n|product                          |subcategory|category|unit sales|\n+---------------------------------+-----------+--------+----------+\n|Big Time Frozen Sausage Pizza    |Pizza      |Pizza   |1         |\n|Big Time Frozen Mushroom Pizza   |Pizza      |Pizza   |1         |\n|Imagine Frozen Sausage Pizza     |Pizza      |Pizza   |1         |\n|Imagine Frozen Pepperoni Pizza   |Pizza      |Pizza   |2         |\n|Imagine Frozen Pepperoni Pizza   |Pizza      |Pizza   |1         |\n|PigTail Frozen Cheese Pizza      |Pizza      |Pizza   |2         |\n|PigTail Frozen Pepperoni Pizza   |Pizza      |Pizza   |2         |\n|Carrington Frozen Pepperoni Pizza|Pizza      |Pizza   |2         |\n|PigTail Frozen Cheese Pizza      |Pizza      |Pizza   |1         |\n|PigTail Frozen Mushroom Pizza    |Pizza      |Pizza   |2         |\n|Big Time Frozen Pepperoni Pizza  |Pizza      |Pizza   |1         |\n|Big Time Frozen Cheese Pizza     |Pizza      |Pizza   |2         |\n|Golden Frozen Sausage Pizza      |Pizza      |Pizza   |2         |\n|Big Time Frozen Sausage Pizza    |Pizza      |Pizza   |1         |\n|Carrington Frozen Pepperoni Pizza|Pizza      |Pizza   |3         |\n|Big Time Frozen Sausage Pizza    |Pizza      |Pizza   |2         |\n|Imagine Frozen Cheese Pizza      |Pizza      |Pizza   |3         |\n|Carrington Frozen Pepperoni Pizza|Pizza      |Pizza   |3         |\n|Carrington Frozen Sausage Pizza  |Pizza      |Pizza   |4         |\n|Big Time Frozen Mushroom Pizza   |Pizza      |Pizza   |2         |\n+---------------------------------+-----------+--------+----------+\nonly showing top 20 rows\n\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -477,7 +387,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d98"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d22"
             }
           ],
           "interpreterSettingId": "spark"
@@ -487,15 +397,15 @@
       "jobName": "paragraph_1625843117680_1979385895",
       "id": "paragraph_1625843117680_1979385895",
       "dateCreated": "2021-07-09 15:05:17.680",
-      "dateStarted": "2021-07-13 14:31:24.706",
-      "dateFinished": "2021-07-13 14:31:24.902",
+      "dateStarted": "2021-07-16 12:37:29.607",
+      "dateFinished": "2021-07-16 12:37:29.796",
       "status": "FINISHED"
     },
     {
       "text": "// count all the product sales\nval allSales \u003d foodmartDataset.count()\n\n// count the distinct products\nval distinctProducts \u003d \n    foodmartDataset\n        .select(\"product\") // select the products only\n        .distinct() // get the distinct values\n        .count() // and count them\n",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:24.906",
-      "progress": 48,
+      "dateUpdated": "2021-07-16 12:37:29.799",
+      "progress": 56,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -513,15 +423,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mallSales\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 86837\n\u001b[1m\u001b[34mdistinctProducts\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 1559\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -531,10 +432,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d99"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d23"
             },
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d100"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d24"
             }
           ],
           "interpreterSettingId": "spark"
@@ -544,15 +445,15 @@
       "jobName": "paragraph_1626186325649_1621764430",
       "id": "paragraph_1626186325649_1621764430",
       "dateCreated": "2021-07-13 14:25:25.649",
-      "dateStarted": "2021-07-13 14:31:24.950",
-      "dateFinished": "2021-07-13 14:31:26.344",
+      "dateStarted": "2021-07-16 12:37:29.847",
+      "dateFinished": "2021-07-16 12:37:34.666",
       "status": "FINISHED"
     },
     {
       "text": "// return the amount of sales by category\nfoodmartDataset // given the dataframe\n    .groupBy(\"category\") // group all tuples by category\n    .sum(\"unit sales\") // sum the unit sales\n    .orderBy(\"sum(unit sales)\") // and sort the result\n    .show() // compute the result",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:26.354",
-      "progress": 79,
+      "dateUpdated": "2021-07-16 12:37:34.751",
+      "progress": 34,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -570,15 +471,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "+--------------------+---------------+\n|            category|sum(unit sales)|\n+--------------------+---------------+\n|      Canned Oysters|            708|\n|       Canned Shrimp|            804|\n|             Candles|            815|\n|     Canned Sardines|            819|\n|        Canned Clams|            882|\n| Packaged Vegetables|            886|\n|    Canned Anchovies|            900|\n|       Miscellaneous|            969|\n|         Canned Tuna|           1710|\n|             Seafood|           1764|\n|       Cold Remedies|           1776|\n|       Decongestants|           1813|\n|              Drinks|           2469|\n|    Plastic Products|           2477|\n|            Hardware|           2492|\n|      Frozen Entrees|           2585|\n|         Side Dishes|           2604|\n|      Pain Relievers|           3254|\n|               Pizza|           3310|\n|Pure Juice Beverages|           3396|\n+--------------------+---------------+\nonly showing top 20 rows\n\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -588,7 +480,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d101"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d25"
             }
           ],
           "interpreterSettingId": "spark"
@@ -598,15 +490,15 @@
       "jobName": "paragraph_1625843495878_2127914479",
       "id": "paragraph_1625843495878_2127914479",
       "dateCreated": "2021-07-09 15:11:35.878",
-      "dateStarted": "2021-07-13 14:31:26.396",
-      "dateFinished": "2021-07-13 14:31:27.499",
+      "dateStarted": "2021-07-16 12:37:34.776",
+      "dateFinished": "2021-07-16 12:37:35.392",
       "status": "FINISHED"
     },
     {
-      "text": "// get the number of distinct products with category \u003d \u0027Pizza\u0027\nfoodmartDataset\n    .filter(\"category \u003d \u0027Pizza\u0027\")\n    .select(\"product\") // select the products only\n    .distinct() // get the distinct values\n    .count() // and count them",
+      "text": "// get the number of distinct products with category \u003d \u0027Pizza\u0027\nfoodmartDataset\n    .filter(\"category \u003d \u0027Pizza\u0027\") // filter pizzas\n    .select(\"product\") // select the products only\n    .distinct() // get the distinct values\n    .count() // and count them",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:27.593",
-      "progress": 35,
+      "dateUpdated": "2021-07-16 12:37:35.477",
+      "progress": 42,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -624,15 +516,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mres68\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m \u003d 20\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -642,7 +525,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d102"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d26"
             }
           ],
           "interpreterSettingId": "spark"
@@ -652,15 +535,15 @@
       "jobName": "paragraph_1626185549421_406391997",
       "id": "paragraph_1626185549421_406391997",
       "dateCreated": "2021-07-13 14:12:29.421",
-      "dateStarted": "2021-07-13 14:31:27.612",
-      "dateFinished": "2021-07-13 14:31:28.619",
+      "dateStarted": "2021-07-16 12:37:35.498",
+      "dateFinished": "2021-07-16 12:37:36.281",
       "status": "FINISHED"
     },
     {
-      "text": "// get the average sales by category\nfoodmartDataset\n    .groupBy(\"category\") // select the products only\n    .avg(\"unit sales\")\n    .show()",
+      "text": "// get the average sales by category\nfoodmartDataset\n    .groupBy(\"category\") // select the products only\n    .avg(\"unit sales\") // average the unit sales\n    .show()",
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:28.712",
-      "progress": 39,
+      "dateUpdated": "2021-07-16 12:37:36.298",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -678,15 +561,6 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "+-------------------+------------------+\n|           category|   avg(unit sales)|\n+-------------------+------------------+\n|      Miscellaneous|3.1563517915309447|\n|    Breakfast Foods|3.0648250460405158|\n|   Canned Anchovies| 3.114186851211073|\n|    Frozen Desserts| 3.045745204131825|\n|      Starchy Foods|3.1117681845062095|\n|       Baking Goods| 3.072426470588235|\n|   Plastic Products| 3.046740467404674|\n|   Kitchen Products|3.0919117647058822|\n|            Candles| 3.029739776951673|\n|  Cleaning Supplies| 3.080572963294539|\n|Packaged Vegetables|3.0136054421768708|\n|          Specialty|3.0811287477954146|\n|        Side Dishes| 3.085308056872038|\n|               Meat| 3.079874354947274|\n|      Beer and Wine|3.0815682739972963|\n|   Jams and Jellies|3.0734229576008274|\n|      Hot Beverages| 3.092020129403307|\n|              Pizza|3.0905695611577966|\n|         Vegetables|3.0774983640272975|\n|     Frozen Entrees|3.0773809523809526|\n+-------------------+------------------+\nonly showing top 20 rows\n\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -696,19 +570,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d103"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d27"
             },
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d104"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d28"
             },
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d105"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d29"
             },
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d106"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d30"
             },
             {
-              "jobUrl": "http://54b40fa293f4:4040/jobs/job?id\u003d107"
+              "jobUrl": "http://d2d9186c0dd2:4040/jobs/job?id\u003d31"
             }
           ],
           "interpreterSettingId": "spark"
@@ -718,13 +592,13 @@
       "jobName": "paragraph_1626185613032_1090434638",
       "id": "paragraph_1626185613032_1090434638",
       "dateCreated": "2021-07-13 14:13:33.032",
-      "dateStarted": "2021-07-13 14:31:28.733",
-      "dateFinished": "2021-07-13 14:31:29.310",
+      "dateStarted": "2021-07-16 12:37:36.328",
+      "dateFinished": "2021-07-16 12:37:36.840",
       "status": "FINISHED"
     },
     {
       "user": "anonymous",
-      "dateUpdated": "2021-07-13 14:31:29.333",
+      "dateUpdated": "2021-07-16 12:37:36.929",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -763,6 +637,6 @@
     "isZeppelinNotebookCronEnable": false
   },
   "info": {
-    "isRunning": true
+    "isRunning": false
   }
 }
