@@ -1,5 +1,14 @@
 # Hands On Data Pipelines
 
+## Some feedback
+
+- Fare un unico "workspace", così da non dover lanciare immagini Docker diverse
+- Migrare a COLAB? Così da evitare Docker del tutto
+- Tagliare di molto i dettagli tecnici (non c'è tempo per farli)
+- La parte Big Data è praticamente inutile, magari integrare al volo PySpark per fare vedere che anche lì esiste la metafora del dataframe
+ 
+## Contents
+
 This lab will cover:
 
 - Data cleaning and preprocessing (hands on Python and Pandas)
