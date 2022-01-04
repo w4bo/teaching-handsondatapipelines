@@ -7,10 +7,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: main
-      - name: Build Images
-        run: |
-          chmod +x build.sh
-          ./build.sh
       - name: Run the notebooks
         run: |
           cd 01-MachineLearning
@@ -20,3 +16,8 @@ jobs:
             do echo "Processing $f file..";
             jupyter nbconvert --execute --to notebook --inplace $f
           done
+      - name: Build Images
+        run: |
+          chmod +x build.sh
+          ./build.sh
+
