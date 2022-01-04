@@ -12,10 +12,11 @@ jobs:
           cd 01-MachineLearning
           pip3 install -r requirements.txt
           pip3 install jupyter
-          for f in *.c; 
-            do echo "Processing $f file..";
+          for f in *.ipynb; 
+            do echo "Processing $f file...";
             jupyter nbconvert --execute --to notebook --inplace $f
           done
+          cd -
       - name: Build Images
         run: |
           chmod +x build.sh
