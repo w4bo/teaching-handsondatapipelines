@@ -2,7 +2,9 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true,
+      "automerge": true
+    },
+    {
       "versioning": "semver"
     }
   ]
