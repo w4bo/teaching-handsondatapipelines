@@ -1,12 +1,25 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>DanySK/renovate-config"
+  ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "description": "Trigger a minor update on some dependencies",
+      "matchPackageNames": [
+        "org.apache.commons:commons-math3",
+        "org.danilopianini:listset"
+      ],
+      "semanticCommitScope": "api-deps"
     },
     {
-      "matchPackagePatterns": ["*"],
-      "versioning": "semver"
+      "description": "Trigger a patch update on some dependencies",
+      "matchPackageNames": [
+        "org.jetbrains.kotlin.jvm",
+        "org.protelis:protelis-interpreter",
+        "org.protelis:protelis-lang"
+      ],
+      "semanticCommitScope": "core-deps"
     }
   ]
 }
