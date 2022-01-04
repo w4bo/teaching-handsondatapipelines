@@ -1,5 +1,25 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "github>DanySK/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "description": "Trigger a minor update on some dependencies",
+      "matchPackageNames": [
+        "org.apache.commons:commons-math3",
+        "org.danilopianini:listset"
+      ],
+      "semanticCommitScope": "api-deps"
+    },
+    {
+      "description": "Trigger a patch update on some dependencies",
+      "matchPackageNames": [
+        "org.jetbrains.kotlin.jvm",
+        "org.protelis:protelis-interpreter",
+        "org.protelis:protelis-lang"
+      ],
+      "semanticCommitScope": "core-deps"
+    }
   ]
 }
