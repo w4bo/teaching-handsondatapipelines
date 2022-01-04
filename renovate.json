@@ -5,6 +5,7 @@
       "automerge": true
     },
     {
+      "matchPackagePatterns": ["*"],
       "versioning": "semver"
     }
   ]
