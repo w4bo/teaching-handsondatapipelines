@@ -9,6 +9,7 @@ jobs:
           ref: main
       - name: Build Images
         run: |
+          chmod +x build.sh
           ./build.sh
       - name: Run the notebooks
         run: |
