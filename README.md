@@ -1,5 +1,7 @@
 # Hands On Data Pipelines
 
+[![build](https://github.com/w4bo/handsOnDataPipelines/actions/workflows/build.yml/badge.svg)](https://github.com/w4bo/handsOnDataPipelines/actions/workflows/build.yml)
+
 ## Some feedback
 
 - Migrare a COLAB? Così da evitare Docker del tutto
