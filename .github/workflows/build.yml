@@ -10,3 +10,12 @@ jobs:
       - name: Build Images
         run: |
           ./build.sh
+      - name: Run the notebooks
+        run: |
+          cd 01-MachineLearning
+          pip3 install -r requirements.txt
+          pip3 install jupyter
+          for f in *.c; 
+            do echo "Processing $f file..";
+            jupyter nbconvert --execute --to notebook --inplace $f
+          done
