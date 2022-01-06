@@ -18,8 +18,9 @@ jobs:
             jupyter nbconvert --to script $f
             extension="${f##*.}"
             filename="${f%.*}"
-            echo -e "from IPython import get_ipython\n$(cat $filename.py)" > $filename.py
-            python3 $filename.py
+            # echo -e "from IPython import get_ipython\n$(cat $filename.py)" > $filename.py
+            # python3 $filename.py
+            ipython $filename.py
           done
           ls -las
           cd -
