@@ -1,4 +1,4 @@
-# 02 - Machine learning
+# 01 - Machine learning
 
 ## Running the code
 
@@ -9,18 +9,18 @@
 - Then, run one of the following commands depending on your OS
     - In Windows (cmd)
     ```
-    docker build -t lab02 .
-    docker run -p 8888:8888 --rm -v %cd%:/notebook lab02
+    docker build -t lab01 .
+    docker run -p 8888:8888 --rm -v %cd%:/notebook lab01
     ```
     - In Windows (powershell)
     ```
-    docker build -t lab02 .
-    docker run -p 8888:8888 --rm -v ${PWD}:/notebook lab02
+    docker build -t lab01 .
+    docker run -p 8888:8888 --rm -v ${PWD}:/notebook lab01
     ```
     - In Linux
     ```
-    docker build -t lab02 .
-    docker run -p 8888:8888 --rm -v $(pwd):/notebook lab02
+    docker build -t lab01 .
+    docker run -p 8888:8888 --rm -v $(pwd):/notebook lab01
     ```
 - After running the container, in the shell will be prompted a link beginning with `127.0.0.1:8888`; copy and paste the link into your browser
 - Play with the notebook 
