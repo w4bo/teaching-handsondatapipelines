@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: main
       - name: Run the notebooks
         run: |
           cd 01-MachineLearning
