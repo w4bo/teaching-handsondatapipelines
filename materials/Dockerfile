@@ -1,4 +1,4 @@
-FROM python:3.11-slim-buster
+FROM python:3.10-bullseye
 RUN mkdir /notebooks
 COPY requirements.txt /notebooks
 WORKDIR /notebooks
