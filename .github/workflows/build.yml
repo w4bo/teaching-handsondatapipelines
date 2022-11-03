@@ -28,3 +28,7 @@ jobs:
             ipython $filename.py
           done
           ls -las
+      - name: Build local Jupyter
+        run: |
+          cd materials
+          sh run.sh
