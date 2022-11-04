@@ -31,4 +31,4 @@ jobs:
       - name: Build local Jupyter
         run: |
           cd materials
-          sh run.sh
+          docker build -t jupyter .
