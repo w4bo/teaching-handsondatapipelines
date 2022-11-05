@@ -14697,27 +14697,27 @@ div.jp-OutputPrompt {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>--2022-11-05 17:56:55--  http://big.csr.unibo.it/projects/nosql-datasets/2022-bbs-dsaa-foodmart.csv
+<pre>--2022-11-05 17:56:48--  http://big.csr.unibo.it/projects/nosql-datasets/2022-bbs-dsaa-foodmart.csv
 Resolving big.csr.unibo.it (big.csr.unibo.it)... 137.204.74.24
 Connecting to big.csr.unibo.it (big.csr.unibo.it)|137.204.74.24|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 35810098 (34M) [text/csv]
 Saving to: ‘2022-bbs-dsaa-foodmart.csv.1’
 
-2022-bbs-dsaa-foodm 100%[===================&gt;]  34.15M  18.0MB/s    in 1.9s    
+2022-bbs-dsaa-foodm 100%[===================&gt;]  34.15M  14.1MB/s    in 2.4s    
 
-2022-11-05 17:56:57 (18.0 MB/s) - ‘2022-bbs-dsaa-foodmart.csv.1’ saved [35810098/35810098]
+2022-11-05 17:56:51 (14.1 MB/s) - ‘2022-bbs-dsaa-foodmart.csv.1’ saved [35810098/35810098]
 
---2022-11-05 17:56:58--  http://big.csr.unibo.it/projects/nosql-datasets/2022-bbs-dsaa-housing.csv
+--2022-11-05 17:56:51--  http://big.csr.unibo.it/projects/nosql-datasets/2022-bbs-dsaa-housing.csv
 Resolving big.csr.unibo.it (big.csr.unibo.it)... 137.204.74.24
 Connecting to big.csr.unibo.it (big.csr.unibo.it)|137.204.74.24|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1423529 (1.4M) [text/csv]
 Saving to: ‘2022-bbs-dsaa-housing.csv’
 
-2022-bbs-dsaa-housi 100%[===================&gt;]   1.36M  2.08MB/s    in 0.7s    
+2022-bbs-dsaa-housi 100%[===================&gt;]   1.36M  1.65MB/s    in 0.8s    
 
-2022-11-05 17:56:59 (2.08 MB/s) - ‘2022-bbs-dsaa-housing.csv’ saved [1423529/1423529]
+2022-11-05 17:56:52 (1.65 MB/s) - ‘2022-bbs-dsaa-housing.csv’ saved [1423529/1423529]
 
 E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
 E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
@@ -14784,7 +14784,7 @@ E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are y
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>22/11/05 17:57:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+<pre>22/11/05 17:57:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 Using Spark&#39;s default log4j profile: org/apache/spark/log4j-defaults.properties
 Setting default log level to &#34;WARN&#34;.
 To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
@@ -14805,7 +14805,7 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
         <div>
             <p><b>SparkContext</b></p>
 
-            <p><a href="http://fv-az201-614.ett4tu3jvdse5ovc2mkgjqcs5a.bx.internal.cloudapp.net:4040">Spark UI</a></p>
+            <p><a href="http://fv-az292-441.tqgtyn10aqxuxoi0mkfbldi5vh.jx.internal.cloudapp.net:4040">Spark UI</a></p>
 
             <dl>
               <dt>Version</dt>
@@ -15675,6 +15675,16 @@ root
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>22/11/05 17:57:23 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting &#39;spark.sql.debug.maxToStringFields&#39;.
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>+---------+----------+-----------+----------+--------+----------------+----------+----+--------------------+---------------+--------------------+-----------------+-------------------+---------------------+--------------+-----------------+------------+------------------+--------+--------------+-------+------+--------------+----------+-----------+----------+--------------------+--------------------+--------------------+--------------------+----------------+---------------+-----------------+-----------------+-----------+----------+--------+---------+--------------------+----------+-----+--------------+---------------+-------------+------------+-------------+-------------+-----------------+--------------------+-------------+-----------+-------------+----------------+----------+-----------+----------+
 |Birthdate|Brand Name|    C. City|C. Country|C. State|        Category|Coffee Bar|Cost|Customer (Birthdate)|Customer (Card)|Customer (Education)|Customer (Income)|Customer (Location)|Customer (Occupation)|Customer (Sex)|Customer (Status)|  Department|         Education|End Date|        Family|Florist|Gender|Marital Status|Media Type|Member Card|Occupation|     Product (Brand)|  Product (Category)|Product (Department)|    Product (Family)|Promotion (Cost)|Promotion (End)|Promotion (Media)|Promotion (Start)|    S. City|S. Country|S. State|Salad Bar|          Sales Date|Start Date|Store|Store (Coffee)|Store (Florist)|Store (Salad)|Store (Type)|Store (Video)|  Subcategory|Subcategory (Dep)|Subcategory (Family)|         Type|Video Store|Yearly Income|Numero di record|Store Cost|Store Sales|Unit Sales|
@@ -15687,16 +15697,6 @@ root
 +---------+----------+-----------+----------+--------+----------------+----------+----+--------------------+---------------+--------------------+-----------------+-------------------+---------------------+--------------+-----------------+------------+------------------+--------+--------------+-------+------+--------------+----------+-----------+----------+--------------------+--------------------+--------------------+--------------------+----------------+---------------+-----------------+-----------------+-----------+----------+--------+---------+--------------------+----------+-----+--------------+---------------+-------------+------------+-------------+-------------+-----------------+--------------------+-------------+-----------+-------------+----------------+----------+-----------+----------+
 only showing top 5 rows
 
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>22/11/05 17:57:27 WARN package: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting &#39;spark.sql.debug.maxToStringFields&#39;.
 </pre>
 </div>
 </div>
@@ -16093,6 +16093,15 @@ only showing top 20 rows
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>[Stage 46:==============================================&gt;       (174 + 2) / 200]</pre>
+</div>
+</div>
 <div class="jp-OutputArea-child">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
