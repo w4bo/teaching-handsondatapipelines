@@ -14726,8 +14726,8 @@ div.jp-OutputPrompt {
   Downloading paretoset-1.2.0-py3-none-any.whl (13 kB)
 Requirement already satisfied: numpy in /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages (from paretoset) (1.24.2)
 Requirement already satisfied: pandas in /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages (from paretoset) (1.5.3)
-Requirement already satisfied: python-dateutil&gt;=2.8.1 in /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages (from pandas-&gt;paretoset) (2.8.2)
 Requirement already satisfied: pytz&gt;=2020.1 in /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages (from pandas-&gt;paretoset) (2022.7.1)
+Requirement already satisfied: python-dateutil&gt;=2.8.1 in /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages (from pandas-&gt;paretoset) (2.8.2)
 Requirement already satisfied: six&gt;=1.5 in /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages (from python-dateutil&gt;=2.8.1-&gt;pandas-&gt;paretoset) (1.16.0)
 Installing collected packages: paretoset
 Successfully installed paretoset-1.2.0
@@ -15817,16 +15817,6 @@ class="
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Fitting 3 folds for each of 6 candidates, totalling 18 fits
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>/opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/sklearn/model_selection/_search.py:305: UserWarning: The total space of parameters 6 is smaller than n_iter=10. Running 6 iterations. For exhaustive searches, use GridSearchCV.
   warnings.warn(
@@ -15841,7 +15831,8 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END .................max_features=auto, n_estimators=50; total time=   4.5s
+<pre>Fitting 3 folds for each of 6 candidates, totalling 18 fits
+[CV] END .................max_features=auto, n_estimators=50; total time=   4.3s
 </pre>
 </div>
 </div>
@@ -15862,7 +15853,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END .................max_features=auto, n_estimators=50; total time=   4.5s
+<pre>[CV] END .................max_features=auto, n_estimators=50; total time=   4.2s
 </pre>
 </div>
 </div>
@@ -15883,7 +15874,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END .................max_features=auto, n_estimators=50; total time=   4.5s
+<pre>[CV] END .................max_features=auto, n_estimators=50; total time=   4.2s
 </pre>
 </div>
 </div>
@@ -15904,7 +15895,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END ................max_features=auto, n_estimators=100; total time=   9.0s
+<pre>[CV] END ................max_features=auto, n_estimators=100; total time=   8.5s
 </pre>
 </div>
 </div>
@@ -15925,7 +15916,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END ................max_features=auto, n_estimators=100; total time=   8.9s
+<pre>[CV] END ................max_features=auto, n_estimators=100; total time=   8.4s
 </pre>
 </div>
 </div>
@@ -15946,7 +15937,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END ................max_features=auto, n_estimators=100; total time=   8.9s
+<pre>[CV] END ................max_features=auto, n_estimators=100; total time=   8.4s
 </pre>
 </div>
 </div>
@@ -15967,7 +15958,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END ................max_features=auto, n_estimators=150; total time=  13.5s
+<pre>[CV] END ................max_features=auto, n_estimators=150; total time=  12.7s
 </pre>
 </div>
 </div>
@@ -15988,7 +15979,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END ................max_features=auto, n_estimators=150; total time=  13.3s
+<pre>[CV] END ................max_features=auto, n_estimators=150; total time=  12.5s
 </pre>
 </div>
 </div>
@@ -16009,16 +16000,16 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[CV] END ................max_features=auto, n_estimators=150; total time=  13.3s
-[CV] END .................max_features=sqrt, n_estimators=50; total time=   1.4s
-[CV] END .................max_features=sqrt, n_estimators=50; total time=   1.4s
-[CV] END .................max_features=sqrt, n_estimators=50; total time=   1.4s
-[CV] END ................max_features=sqrt, n_estimators=100; total time=   2.8s
-[CV] END ................max_features=sqrt, n_estimators=100; total time=   2.8s
+<pre>[CV] END ................max_features=auto, n_estimators=150; total time=  12.6s
+[CV] END .................max_features=sqrt, n_estimators=50; total time=   1.3s
+[CV] END .................max_features=sqrt, n_estimators=50; total time=   1.3s
+[CV] END .................max_features=sqrt, n_estimators=50; total time=   1.3s
 [CV] END ................max_features=sqrt, n_estimators=100; total time=   2.7s
-[CV] END ................max_features=sqrt, n_estimators=150; total time=   4.1s
-[CV] END ................max_features=sqrt, n_estimators=150; total time=   4.1s
-[CV] END ................max_features=sqrt, n_estimators=150; total time=   4.1s
+[CV] END ................max_features=sqrt, n_estimators=100; total time=   2.7s
+[CV] END ................max_features=sqrt, n_estimators=100; total time=   2.7s
+[CV] END ................max_features=sqrt, n_estimators=150; total time=   4.0s
+[CV] END ................max_features=sqrt, n_estimators=150; total time=   4.0s
+[CV] END ................max_features=sqrt, n_estimators=150; total time=   4.0s
 </pre>
 </div>
 </div>
@@ -16157,7 +16148,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;matplotlib.collections.PathCollection at 0x7f8cc3f48910&gt;</pre>
+<pre>&lt;matplotlib.collections.PathCollection at 0x7f29e34ac880&gt;</pre>
 </div>
 
 </div>
@@ -16338,7 +16329,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;matplotlib.collections.PathCollection at 0x7f8cc3ee9270&gt;</pre>
+<pre>&lt;matplotlib.collections.PathCollection at 0x7f29e344dae0&gt;</pre>
 </div>
 
 </div>
