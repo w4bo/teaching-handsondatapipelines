@@ -1,4 +1,5 @@
 *.pdf
+*.html
 
 # Created by https://www.toptal.com/developers/gitignore/api/vim,java,venv,scala,linux,macos,python,gradle,kotlin,eclipse,windows,intellij,libreoffice,microsoftoffice,powershell
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,java,venv,scala,linux,macos,python,gradle,kotlin,eclipse,windows,intellij,libreoffice,microsoftoffice,powershell
