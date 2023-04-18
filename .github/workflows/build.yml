@@ -22,7 +22,8 @@ jobs:
           chmod +x generate.sh
           ./generate.sh
           mkdir _site
-          mv *.html _site
+          cp *.css _site
+          cp *.html _site
           ls -las
       - name: Build local Jupyter
         run: |
