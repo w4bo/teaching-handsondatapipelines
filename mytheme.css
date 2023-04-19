@@ -22,10 +22,6 @@ div {
     font-size: 22px !important;
 }
 
-.slides {
-    width: 95% !important;
-}
-
 pre {
     font-family: "courier new", courier, monospace !important;
     font-size: 22px !important;
@@ -34,8 +30,4 @@ pre {
 img {
     text-align: center;
     max-width: 50% !important;
-}
-
-section {
-    width: 100% !important;
 }
