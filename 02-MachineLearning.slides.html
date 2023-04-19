@@ -15408,10 +15408,12 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Machine Learning is the science (and art) of programming computers so they can learn from data</p>
-<ul>
-<li>Machine Learning is the field of study that gives computers the ability to learn without being explicitly programmed — Arthur Samuel, 1959</li>
-<li>A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E — Tom Mitchell, 1997</li>
-</ul>
+<blockquote>
+<p>Machine Learning is the field of study that gives computers the ability to learn without being explicitly programmed (Arthur Samuel, 1959)</p>
+</blockquote>
+<blockquote>
+<p>A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E (Tom Mitchell, 1997)</p>
+</blockquote>
 
 </div>
 </div>
@@ -15427,15 +15429,15 @@ class="
 <p>Classify them in broad categories, based on the following criteria:</p>
 <ul>
 <li>Whether they are trained with human supervision<ul>
-<li>supervised, unsupervised, semi-supervised, and reinforcement learning</li>
+<li>Supervised, unsupervised, semi-supervised, and reinforcement learning</li>
 </ul>
 </li>
 <li>Whether they can learn incrementally<ul>
-<li>online, batch learning</li>
+<li>Online, batch learning</li>
 </ul>
 </li>
 <li>Whether they compare new to known data points, or detect patterns/models in the training<ul>
-<li>instance-based, model-based learning</li>
+<li>Instance-based, model-based learning</li>
 </ul>
 </li>
 </ul>
@@ -15526,13 +15528,13 @@ class="
 <li>Approximating a mapping function (<code>f</code>) from input variables (<code>X</code>) to discrete output variables (<code>y</code>)</li>
 <li>The output variables are called labels or categories</li>
 <li>The mapping function predicts the class or category for a given observation</li>
-<li>E.g., a spam filter is trained with many example emails along with their class (spam or ham)</li>
+<li>E.g., a spam filter is trained with many example emails along with their class (<code>spam</code> or <code>ham</code>)</li>
 </ul>
 </li>
 <li>Regression<ul>
 <li>Approximating a mapping function (<code>f</code>) from input variables (<code>X</code>) to a continuous output variable (<code>y</code>)</li>
 <li>A continuous output variable is a real-value, such as an integer or floating-point value</li>
-<li>E.g., predict the price of a car given a set of features (mileage, age, brand, etc.) called predictors</li>
+<li>E.g., predict the price of a car given a set of features (<code>mileage</code>, <code>age</code>, <code>brand</code>, etc.) called predictors</li>
 </ul>
 </li>
 </ul>
@@ -15555,16 +15557,19 @@ class="
 <p>Scikit-learn uses data in the form of N-dimensional matrix</p>
 <ul>
 <li>Data as a feature matrix <code>X</code> (e.g., a Pandas DataFrame)<ul>
-<li>The samples represent the individual objects described by the dataset (e.g., a person)</li>
-<li>The features describe each sample in a quantitative manner (e.g., age and height)</li>
-<li>It is usually denoted by</li>
+<li>The samples represent the individual objects described by the dataset (e.g., a <code>person</code>)</li>
+<li>The features describe each sample in a quantitative manner (e.g., <code>age</code> and <code>height</code>)</li>
 </ul>
 </li>
 <li>Data as target array <code>y</code> (e.g., a Pandas Series)<ul>
-<li>Along with features matrix, we also have the target array (e.g., or label)</li>
+<li>Along with features matrix, we also have the target array (label)</li>
 </ul>
 </li>
-<li>How do we distinguish target and feature columns?</li>
+</ul>
+<p>How do we</p>
+<ul>
+<li>distinguish target and feature columns?</li>
+<li>build test and training sets?</li>
 </ul>
 
 </div>
@@ -15981,11 +15986,9 @@ Name: median_house_value, Length: 13828, dtype: float64</pre>
 <p>All the parameters can be set when creating the estimator</p>
 <pre><code>estimator = Estimator(param1=1, param2=2)
 estimator.param1
-
 </code></pre>
 <p>All estimator objects expose a fit method that takes a dataset</p>
 <pre><code>estimator.fit(X)
-
 </code></pre>
 <p>Once data is fitted with an estimator, all the estimated parameters will be the attributes of the estimator object ending by an underscore</p>
 <pre><code>estimator.estimated_param_
@@ -16001,6 +16004,7 @@ estimator.param1
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Sklearn in action</p>
 <ol>
 <li>Choose a class of model<ul>
 <li>Import the appropriate Estimator class from Scikit-learn (e.g., a decision tree)</li>
@@ -16008,12 +16012,12 @@ estimator.param1
 </li>
 <li>Choose model hyperparameters</li>
 <li>Model Fitting<ul>
-<li>Fit the model by calling fit() method of the model instance</li>
+<li>Fit the model by calling <code>fit()</code> method of the model instance</li>
 </ul>
 </li>
 <li>Applying the model to new data<ul>
-<li>For supervised learning, use predict() method to predict the labels for unknown data.</li>
-<li>For unsupervised learning, use predict() or transform() to infer properties of the data.</li>
+<li>For supervised learning, use <code>predict()</code> method to predict the labels for unknown data.</li>
+<li>For unsupervised learning, use <code>predict()</code> or <code>transform()</code> to infer properties of the data.</li>
 </ul>
 </li>
 </ol>
@@ -16400,7 +16404,6 @@ class="
 </li>
 <li><p>Any parameter provided when constructing an estimator may be optimized</p>
 <pre><code>  estimator.get_params()
-
 </code></pre>
 </li>
 </ul>
@@ -16500,36 +16503,36 @@ class="
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Fitting 3 folds for each of 10 candidates, totalling 30 fits
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=10; total time=   0.9s
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=10; total time=   0.8s
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=10; total time=   0.8s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=50; total time=   1.2s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=50; total time=   1.2s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=50; total time=   1.2s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=10; total time=   0.2s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=10; total time=   0.2s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=10; total time=   0.2s
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=25; total time=   2.1s
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=25; total time=   2.1s
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=25; total time=   2.1s
-[CV] END max_features=1.0, min_samples_split=5, n_estimators=100; total time=   7.8s
-[CV] END max_features=1.0, min_samples_split=5, n_estimators=100; total time=   7.7s
-[CV] END max_features=1.0, min_samples_split=5, n_estimators=100; total time=   7.7s
-[CV] END max_features=1.0, min_samples_split=5, n_estimators=10; total time=   0.8s
-[CV] END max_features=1.0, min_samples_split=5, n_estimators=10; total time=   0.8s
-[CV] END max_features=1.0, min_samples_split=5, n_estimators=10; total time=   0.8s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=10; total time=   1.0s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=10; total time=   1.0s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=10; total time=   1.0s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=50; total time=   1.4s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=50; total time=   1.4s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=50; total time=   1.4s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=10; total time=   0.3s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=10; total time=   0.3s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=10; total time=   0.3s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=25; total time=   2.5s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=25; total time=   2.4s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=25; total time=   2.3s
+[CV] END max_features=1.0, min_samples_split=5, n_estimators=100; total time=   8.9s
+[CV] END max_features=1.0, min_samples_split=5, n_estimators=100; total time=   8.3s
+[CV] END max_features=1.0, min_samples_split=5, n_estimators=100; total time=   8.7s
+[CV] END max_features=1.0, min_samples_split=5, n_estimators=10; total time=   0.9s
+[CV] END max_features=1.0, min_samples_split=5, n_estimators=10; total time=   0.9s
+[CV] END max_features=1.0, min_samples_split=5, n_estimators=10; total time=   0.9s
 [CV] END max_features=sqrt, min_samples_split=2, n_estimators=25; total time=   0.7s
 [CV] END max_features=sqrt, min_samples_split=2, n_estimators=25; total time=   0.7s
 [CV] END max_features=sqrt, min_samples_split=2, n_estimators=25; total time=   0.7s
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=100; total time=   8.5s
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=100; total time=   8.3s
-[CV] END max_features=1.0, min_samples_split=2, n_estimators=100; total time=   8.4s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=100; total time=   2.3s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=100; total time=   2.3s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=100; total time=   2.3s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=100; total time=   9.3s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=100; total time=   9.7s
+[CV] END max_features=1.0, min_samples_split=2, n_estimators=100; total time=   9.4s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=100; total time=   2.7s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=100; total time=   2.6s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=100; total time=   2.4s
 [CV] END max_features=sqrt, min_samples_split=5, n_estimators=25; total time=   0.6s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=25; total time=   0.6s
-[CV] END max_features=sqrt, min_samples_split=5, n_estimators=25; total time=   0.6s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=25; total time=   0.7s
+[CV] END max_features=sqrt, min_samples_split=5, n_estimators=25; total time=   0.7s
 </pre>
 </div>
 </div>
@@ -16558,7 +16561,7 @@ class="
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_forest</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="n">min_samples_split</span><span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span> <span class="s1">&#39;sqrt&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_forest</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span><span class="s1">&#39;sqrt&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16664,7 +16667,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;matplotlib.collections.PathCollection at 0x7f11f112bfa0&gt;</pre>
+<pre>&lt;matplotlib.collections.PathCollection at 0x7fa4607125c0&gt;</pre>
 </div>
 
 </div>
@@ -16811,10 +16814,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Classification">Classification<a class="anchor-link" href="#Classification">&#182;</a></h2><ul>
-<li>Create classes (low, medium, high) from the target value</li>
-<li>Create and fit a decision tree</li>
-</ul>
+<h2 id="Classification">Classification<a class="anchor-link" href="#Classification">&#182;</a></h2><p>Can we turn this into a classification problem?</p>
 
 </div>
 </div>
@@ -16910,6 +16910,18 @@ class="
 </div>
 
 </div></section></section><section ><section >
+<div id="cell-id=90d6b350" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Computing performance</p>
+
+</div>
+</div>
+</div>
+</div>
 <div id="cell-id=b9a18a02" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16933,7 +16945,7 @@ class="
 </div>
 </div>
 </div>
-</div></section></section><section ><section >
+</div>
 <div id="cell-id=079e663e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16941,16 +16953,10 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>Precision $\frac{tp}{tp + fp}$</li>
-<li>Recall $\frac{tp}{tp + fn}$</li>
-<li>Accuracy $\frac{tp + tn}{tp + tn + fp + fpn}$<ul>
-<li>Accuracy can be a misleading metric for imbalanced data sets</li>
-</ul>
-</li>
-<li>F1-score $2 \cdot \frac{precision \cdot recall}{precision + recall}$<ul>
-<li>Combines precision and recall</li>
-</ul>
-</li>
+<li>Precision: $\frac{tp}{tp + fp}$</li>
+<li>Recall: $\frac{tp}{tp + fn}$</li>
+<li>Accuracy: $\frac{tp + tn}{tp + tn + fp + fpn}$</li>
+<li>F1-score: $2 \cdot \frac{precision \cdot recall}{precision + recall}$</li>
 </ul>
 <p>Summing up</p>
 <ul>
@@ -17243,33 +17249,33 @@ class="
 [CV] END max_depth=2, max_features=sqrt, min_samples_leaf=1, n_estimators=150; total time=   0.8s
 [CV] END max_depth=2, max_features=sqrt, min_samples_leaf=1, n_estimators=150; total time=   0.8s
 [CV] END max_depth=2, max_features=sqrt, min_samples_leaf=1, n_estimators=150; total time=   0.8s
-[CV] END max_depth=5, max_features=1.0, min_samples_leaf=5, n_estimators=100; total time=   2.4s
-[CV] END max_depth=5, max_features=1.0, min_samples_leaf=5, n_estimators=100; total time=   2.4s
-[CV] END max_depth=5, max_features=1.0, min_samples_leaf=5, n_estimators=100; total time=   2.4s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=50; total time=   0.5s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=50; total time=   0.5s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=50; total time=   0.5s
+[CV] END max_depth=5, max_features=1.0, min_samples_leaf=5, n_estimators=100; total time=   2.5s
+[CV] END max_depth=5, max_features=1.0, min_samples_leaf=5, n_estimators=100; total time=   2.5s
+[CV] END max_depth=5, max_features=1.0, min_samples_leaf=5, n_estimators=100; total time=   2.6s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=50; total time=   0.6s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=50; total time=   0.6s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=50; total time=   0.6s
 [CV] END max_depth=5, max_features=sqrt, min_samples_leaf=1, n_estimators=50; total time=   0.5s
 [CV] END max_depth=5, max_features=sqrt, min_samples_leaf=1, n_estimators=50; total time=   0.5s
 [CV] END max_depth=5, max_features=sqrt, min_samples_leaf=1, n_estimators=50; total time=   0.5s
 [CV] END max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=150; total time=   0.8s
-[CV] END max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=150; total time=   0.8s
-[CV] END max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=150; total time=   0.8s
+[CV] END max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=150; total time=   0.9s
+[CV] END max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=150; total time=   0.9s
 [CV] END max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.3s
 [CV] END max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.3s
 [CV] END max_depth=2, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.3s
-[CV] END max_depth=5, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   2.4s
-[CV] END max_depth=5, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   2.4s
-[CV] END max_depth=5, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   2.4s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   1.0s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   1.0s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   1.0s
-[CV] END max_depth=5, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.5s
-[CV] END max_depth=5, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.5s
-[CV] END max_depth=5, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.5s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=5, n_estimators=150; total time=   1.5s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=5, n_estimators=150; total time=   1.6s
-[CV] END max_depth=2, max_features=1.0, min_samples_leaf=5, n_estimators=150; total time=   1.6s
+[CV] END max_depth=5, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   2.8s
+[CV] END max_depth=5, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   2.8s
+[CV] END max_depth=5, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   2.7s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   1.1s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   1.2s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=1, n_estimators=100; total time=   1.2s
+[CV] END max_depth=5, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.6s
+[CV] END max_depth=5, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.6s
+[CV] END max_depth=5, max_features=sqrt, min_samples_leaf=5, n_estimators=50; total time=   0.6s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=5, n_estimators=150; total time=   1.9s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=5, n_estimators=150; total time=   1.9s
+[CV] END max_depth=2, max_features=1.0, min_samples_leaf=5, n_estimators=150; total time=   1.9s
 </pre>
 </div>
 </div>
