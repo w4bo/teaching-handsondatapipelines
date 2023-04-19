@@ -16011,10 +16011,8 @@ dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>A signed integer is a 32-bit datum that encodes an integer in the range:</p>
-<ul>
-<li>[-2**31, 2**31-1] = [-2147483648, 2147483647]</li>
-<li>2201010001 &gt; 2147483647</li>
-</ul>
+<p>$[-2^{31}, 2^{31}-1] = [-2147483648, 2147483647]$</p>
+<p>$2201010001 &gt; 2147483647$</p>
 
 </div>
 </div>
@@ -18350,9 +18348,9 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/tmp/ipykernel_3306/4126258826.py:2: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+<pre>/tmp/ipykernel_3278/4126258826.py:2: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
   rho = df.corr(method=&#39;pearson&#39;)
-/tmp/ipykernel_3306/4126258826.py:3: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+/tmp/ipykernel_3278/4126258826.py:3: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
   pval = df.corr(method=lambda x, y: pearsonr(x, y)[1]) - np.eye(*rho.shape)
 </pre>
 </div>
