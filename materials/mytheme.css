@@ -1,35 +1,30 @@
 p {
-    font-size: 25px;
-}
-
-li {
     font-size: 22px;
 }
 
-span {
+li {
     font-size: 20px;
+}
+
+span {
+    font-size: 18px;
 }
 
 th {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 td {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 div {
-    font-size: 22px !important;
-}
-
-.slides {
-    width: 95% !important;
-    transform: translate(-53%, -50%) !important;
+    font-size: 20px !important;
 }
 
 pre {
     font-family: "courier new", courier, monospace !important;
-    font-size: 22px !important;
+    font-size: 20px !important;
 }
 
 img {
@@ -37,6 +32,3 @@ img {
     max-width: 50% !important;
 }
 
-section {
-    width: 100% !important;
-}
