@@ -3,7 +3,7 @@ set -exo
 git add .
 git commit -m "update"
 git push
-cp requirements.txt co ../../2023-bbs-dm/materials/
+cp requirements.txt ../../2023-bbs-dm/materials/
 cp 00-PythonFundamentals.ipynb ../../2023-bbs-dm/materials/
 cp 01-DataPreprocessing.ipynb ../../2023-bbs-dm/materials/
 cp 02-MachineLearning.ipynb ../../2023-bbs-dm/materials/
